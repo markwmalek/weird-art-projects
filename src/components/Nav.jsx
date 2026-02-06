@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import AppLink from './AppLink';
 import './Nav.css';
 
 export default function Nav() {
@@ -17,12 +17,17 @@ export default function Nav() {
 
   const closeMobile = () => setMobileOpen(false);
 
+  const handleProjectClick = () => {
+    setProjectsOpen(false);
+    closeMobile();
+  };
+
   return (
     <header className="nav">
       <div className="nav__inner">
-        <Link to="/" className="nav__logo">
+        <AppLink to="/" className="nav__logo" onClick={closeMobile}>
           Weird Art Projects
-        </Link>
+        </AppLink>
 
         <button
           className={`nav__hamburger ${mobileOpen ? 'nav__hamburger--open' : ''}`}
@@ -35,7 +40,7 @@ export default function Nav() {
         </button>
 
         <nav className={`nav__menu ${mobileOpen ? 'nav__menu--open' : ''}`}>
-          <Link to="/" className="nav__link" onClick={closeMobile}>Home</Link>
+          <AppLink to="/" className="nav__link" onClick={closeMobile}>Home</AppLink>
 
           <div className="nav__dropdown" ref={projectsRef}>
             <button
@@ -46,13 +51,13 @@ export default function Nav() {
             </button>
             {projectsOpen && (
               <div className="nav__dropdown-menu">
-                <Link to="/parrish" onClick={() => { setProjectsOpen(false); closeMobile(); }}>Parties on Parrish</Link>
-                <Link to="/windows" onClick={() => { setProjectsOpen(false); closeMobile(); }}>Weird Windows</Link>
+                <AppLink to="/parrish" onClick={handleProjectClick}>Parties on Parrish</AppLink>
+                <AppLink to="/windows" onClick={handleProjectClick}>Weird Windows</AppLink>
               </div>
             )}
           </div>
 
-          <Link to="/team" className="nav__link" onClick={closeMobile}>Team</Link>
+          <AppLink to="/team" className="nav__link" onClick={closeMobile}>Team</AppLink>
         </nav>
       </div>
     </header>

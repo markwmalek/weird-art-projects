@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import AppLink from '../components/AppLink';
 import HeroSvg from '../components/HeroSvg';
 import './Home.css';
 
@@ -45,23 +45,23 @@ export default function Home() {
       <section className="tiles">
         <h2 className="tiles__heading">Our Projects</h2>
         <div className="tiles__grid">
-          <Link to={upcomingEvents[0].link} className="tile tile--lg">
+          <AppLink to={upcomingEvents[0].link} className="tile tile--lg">
             <img src={upcomingEvents[0].image} alt={upcomingEvents[0].title} className="tile__img" />
             <div className="tile__content">
               <span className="tile__date">{upcomingEvents[0].date}</span>
               <h3 className="tile__title">{upcomingEvents[0].title}</h3>
               <span className="tile__cta">{upcomingEvents[0].venue} &rarr;</span>
             </div>
-          </Link>
+          </AppLink>
 
-          <Link to={upcomingEvents[1].link} className="tile tile--sm">
+          <AppLink to={upcomingEvents[1].link} className="tile tile--sm">
             <img src={upcomingEvents[1].image} alt={upcomingEvents[1].title} className="tile__img" />
             <div className="tile__content">
               <span className="tile__date">{upcomingEvents[1].date}</span>
               <h3 className="tile__title">{upcomingEvents[1].title}</h3>
               <span className="tile__cta">{upcomingEvents[1].venue} &rarr;</span>
             </div>
-          </Link>
+          </AppLink>
         </div>
       </section>
 
@@ -75,7 +75,7 @@ export default function Home() {
               collaborative events, immersive experiences, and public art activations.
               We believe in the power of art to connect people and transform spaces.
             </p>
-            <Link to="/team" className="tile__link">Meet the Team &rarr;</Link>
+            <AppLink to="/team" className="tile__link">Meet the Team &rarr;</AppLink>
           </div>
 
           <div className="tile tile--sticker">
