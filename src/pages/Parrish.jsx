@@ -4,27 +4,27 @@ import ContactCard from '../components/ContactCard';
 import './Parrish.css';
 
 const events = [
-  { day: 6, title: 'Launch Party', time: '6 PM - 9 PM', admission: 'Free', description: 'Painting, puppets, popcorn, and bubbly with vinyl by Alison Matney, featuring Jeghetto, Greta Boney, and the Weirdos.' },
-  { day: 8, title: "Crowded Table Club: Galentine's Day x Black History Month Paint n Sip", time: '2 PM - 4 PM', admission: '$35', description: 'Led by artist and stylist Sabrina Servance.' },
-  { day: 8, title: 'Music Video Shoot', time: '6 PM - 9 PM', admission: null, description: 'Collaboration with Hugh Swaso and Irene Hui of Jade Rabbit Co.' },
-  { day: 10, title: 'In TRUE Form Podcast LIVE', time: '8 PM - 9 PM', admission: 'Free', description: 'Live recording with host Corey Truesdale and guest Amos Cooper Jr. of Black Robin Ventures.' },
-  { day: 12, title: 'Consumer Mastermind 1.0', time: '9 AM - 11 AM', admission: 'Free', description: 'Session on homebuying tips and credit use hosted by Jessica Davis of the PEER Center.' },
-  { day: 13, title: 'Black Velvet: Photographs by Chris Facey', time: '6 PM - 8 PM', admission: 'Free', description: 'Exhibition and artist conversation with photographers Chris Facey and Samantha Everette.' },
-  { day: 14, title: 'Durham Civil Rights History Tour', time: '12 PM - 1 PM', admission: '$15', description: "Explore Durham's civil rights activism from the 1920s-1970s with Triangle Walking Tours." },
-  { day: 14, title: "Bridgertine's: A Carousel Curation", time: '8 PM - 12 AM', admission: '$0-$20', description: 'Regency-inspired Valentine\'s evening with live music, themed bites, and awards.' },
-  { day: 15, title: "Saints & Ain'ts: A Good Word", time: '5 PM - 7 PM', admission: '$7', description: 'Immersive pop-up performance with poetry, music, and movement created by Dasan Ahanu.' },
-  { day: 18, title: 'Sip & Connect Community Night', time: '6 PM - 9 PM', admission: 'Free', description: 'Hosted by Shaun Gill for business owners and neighbors to connect and build with LEGOs. RSVP required.' },
-  { day: 19, title: 'Make & Release: The Afterlife of Art', time: '6 PM - 9 PM', admission: 'Free', description: "Hands-on art night hosted by Artist at Law Whitney Stanley for creating and deciding artwork's fate." },
-  { day: 20, title: 'Black Cinema in the Bull City', time: '6 PM - 9 PM', admission: 'Free', description: 'Panel exploring creative pathways for Black filmmakers, presented by Film Durham, followed by screening.' },
-  { day: 21, title: 'Behind the Data: Scientific Data as Art and Conversation', time: '12 PM - 2 PM', admission: 'Free', description: "Event by Chantell Evans, PhD using scientific data as art to discuss researchers' journeys and human stories." },
-  { day: 22, title: 'The Burning House: Conversations with Joshuas', time: '3 PM - 5 PM', admission: 'Free', description: 'Panel reimagining Dr. King\'s "burning house," moderated by Dr. Terrance Ruth.' },
-  { day: 22, title: 'Sound Experience', time: '7 PM - 9 PM', admission: null, description: 'An immersive audio experience.' },
-  { day: 24, title: "Writin' Dirty: Southern Slang", time: '7:30 PM - 9:30 PM', admission: '$7', description: 'Generative narrative poetry workshop drawing from pop culture, led by creative writing instructor.' },
-  { day: 25, title: 'Open Mic with Azul', time: '5:30 PM - 10 PM', admission: 'Free', description: 'Open mic for all featuring music, poetry, and spoken word. Sign-up at 5:30 PM.' },
-  { day: 26, title: 'Joy By Any Means', time: '6 PM - 10 PM', admission: 'Free', description: 'Joy playlist and hip hop trivia night hosted by Candy Carver with refreshments and merchandise.' },
-  { day: 27, title: 'Fashion + Music Industry Game Night', time: '7 PM', admission: null, description: 'Hosted by Mo Dollaz and Mr. Cliché of Needle & Thread Co.' },
-  { day: 28, title: 'Durham Civil Rights History Tour', time: '12 PM - 1 PM', admission: '$15', description: "Explore Durham's civil rights history with Triangle Walking Tours." },
-  { day: 28, title: 'Closing Party - I ❤ DRM', time: 'TBD', admission: 'Free', description: 'With DJ HP Fangs.' },
+  { day: 6, title: 'Launch Party', time: '6 PM - 9 PM', admission: 'Free', description: '"painting (v), paintings (n), puppets, popcorn, bubbly" with vinyl by Alison Matney (Bull City Vintage), featuring Jeghetto, Greta Boney, and the Weirdos.', link: null },
+  { day: 8, title: "Crowded Table Club: Galentine's Day x Black History Month Paint n Sip", time: '2 PM - 4 PM', admission: '$35', description: 'Led by artist and stylist Sabrina Servance.', link: 'https://www.eventbrite.com/e/crowded-table-club-galentines-day-x-black-history-month-paint-n-sip-tickets-1980640527134' },
+  { day: 8, title: 'Music Video Shoot', time: '6 PM - 9 PM', admission: null, description: 'With Hugh Swaso and Irene Hui of Jade Rabbit Co.', link: 'https://www.instagram.com/hughswaso/' },
+  { day: 10, title: 'In TRUE Form Podcast LIVE', time: '8 PM - 9 PM', admission: 'Free', description: 'Host Corey Truesdale interviewing Amos Cooper Jr. of Black Robin Ventures. YouTube premiere and streaming audio.', link: 'https://www.instagram.com/intrueform_' },
+  { day: 12, title: 'Consumer Mastermind 1.0: Homebuying Hacks & Using Credit Wisely', time: '9 AM - 11 AM', admission: 'Free', description: 'Jessica Davis of the PEER Center at Pinnacle Financial Partners discusses homebuying tips and credit strategies.', link: 'https://www.eventbrite.com/e/consumer-mastermind-10-homebuying-hacks-using-credit-wisely-tickets-1982250505623' },
+  { day: 13, title: 'Black Velvet: Photographs by Chris Facey', time: '6 PM - 8 PM', admission: 'Free', description: 'Exhibition and artist conversation with photographers Chris Facey and Samantha Everette.', link: 'https://www.instagram.com/coco.butter.shutter/' },
+  { day: 14, title: 'Durham Civil Rights History Tour', time: '12 PM - 1 PM', admission: '$15', description: "Triangle Walking Tours explores Durham's civil rights activism from the 1920s through the 1970s.", link: 'https://trianglewalkingtours.com/durhamcivilrights' },
+  { day: 14, title: "Bridgertine's: A Carousel Curation", time: '8 PM - 12 AM', admission: '$0-$20', description: 'Regency-inspired Valentine\'s evening with live music, themed food, best-dressed award, and "Diamond of the Evening" crown.', link: null },
+  { day: 15, title: "Saints & Ain'ts: A Good Word", time: '5 PM - 7 PM', admission: '$7', description: 'Immersive pop-up performance by Dasan Ahanu featuring poetry, music, movement, and community focus.', link: 'https://agoodwordpopup.eventbrite.com' },
+  { day: 18, title: 'Sip & Connect Community Night', time: '6 PM - 9 PM', admission: 'Free', description: 'Hosted by Shaun Gill of Alston Real Estate Group. Local business owners and neighbors connect and build with LEGOs. RSVP required.', link: null },
+  { day: 19, title: 'Make & Release: The Afterlife of Art', time: '6 PM - 9 PM', admission: 'Free', description: 'Artist at Law Whitney Stanley leads a hands-on creative session where participants decide whether to keep, trade, or release their work.', link: null },
+  { day: 20, title: 'Black Cinema in the Bull City', time: '6 PM - 9 PM', admission: 'Free', description: 'Panel by Alece Oxendine and Penelope Bartlett of Film Durham on creative pathways for Black filmmakers in NC, plus short film screening.', link: 'https://www.instagram.com/film_durham/' },
+  { day: 21, title: 'Behind the Data: Scientific Data as Art and Conversation', time: '12 PM - 2 PM', admission: 'Free', description: 'Chantell Evans, PhD of the Evans Lab at Duke University uses scientific data to explore researcher journeys and the human stories behind the research.', link: 'https://www.evansresearchlab.com/' },
+  { day: 22, title: 'The Burning House: Conversations with Joshuas', time: '3 PM - 5 PM', admission: 'Free', description: 'The Joshuas Movement panel on community-owned health and social systems, moderated by Dr. Terrance Ruth.', link: null },
+  { day: 22, title: 'Sound Experience', time: '7 PM - 9 PM', admission: null, description: 'An immersive audio experience.', link: null },
+  { day: 24, title: "Writin' Dirty: Southern Slang", time: '7:30 PM - 9:30 PM', admission: '$7', description: "Generative poetry workshop using Beyoncé's Lemonade and pop culture artifacts as inspiration for narrative poetry.", link: 'https://southernslangpoetryworkshopfeb2026.eventbrite.com' },
+  { day: 25, title: 'Open Mic with Azul', time: '5:30 PM - 10 PM', admission: 'Free', description: 'Open mic for the girls, gays, theys, and anyone else who wanders in. Sign-ups at 5:30 PM, start at 6 PM.', link: 'https://www.instagram.com/azulmzapata/' },
+  { day: 26, title: 'Joy By Any Means', time: '6 PM - 10 PM', admission: 'Free', description: 'Candy Carver & Friends host a joy playlist and hip-hop trivia game night with artwork, refreshments, and merchandise.', link: 'https://www.eventbrite.com/e/joy-by-any-means-tickets-1981594769298' },
+  { day: 27, title: 'Fashion + Music Industry Game Night', time: '7 PM', admission: null, description: 'Hosted by Mo Dollaz and Mr. Cliché of Needle & Thread Co.', link: 'https://www.instagram.com/needlethreadco/' },
+  { day: 28, title: 'Durham Civil Rights History Tour', time: '12 PM - 1 PM', admission: '$15', description: "Triangle Walking Tours explores Durham's civil rights history from the 1920s through the 1970s.", link: 'https://trianglewalkingtours.com/durhamcivilrights' },
+  { day: 28, title: 'Closing Party - I ❤ DRM', time: 'TBD', admission: 'Free', description: 'With DJ HP Fangs.', link: 'https://www.instagram.com/hpfangs/' },
 ];
 
 const DAYS_OF_WEEK = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -182,6 +182,11 @@ export default function Parrish() {
                           {event.admission && <span className="parrish__cal-event-admission">{event.admission}</span>}
                         </p>
                         <p className="parrish__cal-event-desc">{event.description}</p>
+                        {event.link && (
+                          <a href={event.link} target="_blank" rel="noopener noreferrer" className="parrish__cal-event-link">
+                            More Info →
+                          </a>
+                        )}
                       </div>
                     ))}
                   </>
@@ -218,6 +223,11 @@ export default function Parrish() {
                     {event.admission && <span className="parrish__cal-event-admission">{event.admission}</span>}
                   </p>
                   <p className="parrish__cal-event-desc">{event.description}</p>
+                  {event.link && (
+                    <a href={event.link} target="_blank" rel="noopener noreferrer" className="parrish__cal-event-link">
+                      More Info →
+                    </a>
+                  )}
                 </div>
               </div>
             );

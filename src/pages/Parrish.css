@@ -269,6 +269,19 @@
   color: #555;
 }
 
+.parrish__cal-event-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+.parrish__cal-event-link:hover {
+  text-decoration: underline;
+}
+
 /* List view */
 .parrish__list {
   max-width: 800px;
