@@ -43,6 +43,9 @@ const categories = [
 ];
 
 const artworks = [
+  { title: 'Open Water', artist: 'Reneesha Mccoy', image: '/images/parrish/art/open-water-reneesha-mccoy.png', link: 'https://fa7b88-3.myshopify.com/products/open-water-by-reneesha-mccoy' },
+  { title: 'Bloom', artist: 'Reneesha Mccoy', image: '/images/parrish/art/bloom-reneesha-mccoy.png', link: 'https://fa7b88-3.myshopify.com/products/bloom-by-reneesha-mccoy' },
+  { title: 'Cluster', artist: 'Reneesha Mccoy', image: '/images/parrish/art/cluster-reneesha-mccoy.png', link: 'https://fa7b88-3.myshopify.com/products/cluster-by-reneesha-mccoy' },
   { title: 'Submerging', artist: 'LARA', image: '/images/parrish/art/submerging-lara.jpg', link: 'https://fa7b88-3.myshopify.com/products/submerging-by-lara' },
   { title: 'Headphone Toad', artist: 'Myles Brown', image: '/images/parrish/art/headphone-toad-myles-brown.jpg', link: 'https://fa7b88-3.myshopify.com/products/headphone-toad-by-myles-brown' },
   { title: 'Aurora', artist: 'Zeus Alexander', image: '/images/parrish/art/aurora-zeus-alexander.jpg', link: 'https://fa7b88-3.myshopify.com/products/aurora-by-zeus-alexander' },
@@ -65,8 +68,16 @@ const sponsors = [
   { name: 'Durham Arts Council', logo: '/images/sponsors/durham-arts-council.png' },
 ];
 
+function getTodayInFeb2026() {
+  const now = new Date();
+  if (now.getFullYear() === 2026 && now.getMonth() === 1) {
+    return now.getDate();
+  }
+  return null;
+}
+
 export default function Parrish() {
-  const [selectedDay, setSelectedDay] = useState(null);
+  const [selectedDay, setSelectedDay] = useState(getTodayInFeb2026);
   const [viewMode, setViewMode] = useState('calendar');
   const selectedEvents = selectedDay ? getEventsForDay(selectedDay) : [];
 
