@@ -42,6 +42,22 @@ const categories = [
   { label: 'Poetry', image: '/images/parrish/poetry.jpg' },
 ];
 
+const artworks = [
+  { title: 'Submerging', artist: 'LARA', image: '/images/parrish/art/submerging-lara.jpg', link: 'https://fa7b88-3.myshopify.com/products/submerging-by-lara' },
+  { title: 'Headphone Toad', artist: 'Myles Brown', image: '/images/parrish/art/headphone-toad-myles-brown.jpg', link: 'https://fa7b88-3.myshopify.com/products/headphone-toad-by-myles-brown' },
+  { title: 'Aurora', artist: 'Zeus Alexander', image: '/images/parrish/art/aurora-zeus-alexander.jpg', link: 'https://fa7b88-3.myshopify.com/products/aurora-by-zeus-alexander' },
+  { title: 'Sanctum', artist: 'Zeus Alexander', image: '/images/parrish/art/sanctum-zeus-alexander.jpg', link: 'https://fa7b88-3.myshopify.com/products/sanctum-by-zeus-alexander' },
+  { title: 'Growth', artist: 'Zeus Alexander', image: '/images/parrish/art/growth-zeus-alexander.jpg', link: 'https://fa7b88-3.myshopify.com/products/growth-by-zeus-alexander' },
+  { title: 'Veilform', artist: 'Zeus Alexander', image: '/images/parrish/art/veilform-zeus-alexander.jpg', link: 'https://fa7b88-3.myshopify.com/products/veilform-by-zeus-alexander' },
+  { title: 'Verdant Ascension', artist: 'Zeus Alexander', image: '/images/parrish/art/verdant-ascension-zeus-alexander.jpg', link: 'https://fa7b88-3.myshopify.com/products/verdant-ascension-by-zeus-alexander' },
+  { title: 'Loon', artist: 'Sabrina Servance', image: '/images/parrish/art/loon-sabrina-servance.jpg', link: 'https://fa7b88-3.myshopify.com/products/loon-by-sabrina-servance' },
+  { title: 'High Pollination', artist: 'Sabrina Servance', image: '/images/parrish/art/high-pollination-sabrina-servance.jpg', link: 'https://fa7b88-3.myshopify.com/products/high-pollination-by-sabrina-servance' },
+  { title: 'Patin', artist: 'Sabrina Servance', image: '/images/parrish/art/patin-sabrina-servance.jpg', link: 'https://fa7b88-3.myshopify.com/products/patin-by-sabrina-servance' },
+  { title: 'The Void', artist: 'Dawn R. Taylor', image: '/images/parrish/art/the-void-dawn-taylor.jpg', link: 'https://fa7b88-3.myshopify.com/products/the-void-by-dawn-r-taylor' },
+  { title: 'Yin and Yang before Zen', artist: 'Dawn R. Taylor', image: '/images/parrish/art/yin-yang-zen-dawn-taylor.jpg', link: 'https://fa7b88-3.myshopify.com/products/yin-and-yang-before-zen-by-dawn-r-taylor' },
+  { title: 'Loves Me Not', artist: 'IZA', image: '/images/parrish/art/loves-me-not-iza.jpg', link: 'https://fa7b88-3.myshopify.com/products/loves-me-not-by-iza' },
+];
+
 const sponsors = [
   { name: 'Black Robin Ventures', logo: '/images/sponsors/black-robin.webp' },
   { name: 'Whitney D. Stanley', logo: '/images/sponsors/whitney-logo.png' },
@@ -103,6 +119,21 @@ export default function Parrish() {
         speed={25}
         separatorIcon="/images/lindsay.svg"
       />
+
+      <section className="parrish__art-scroll">
+        <h2 className="parrish__art-heading">Buy Art</h2>
+        <div className="parrish__art-track">
+          {artworks.map((art, i) => (
+            <a href={art.link} target="_blank" rel="noopener noreferrer" className="parrish__art-item" key={i}>
+              <img src={art.image} alt={art.title} />
+              <div className="parrish__art-info">
+                <span className="parrish__art-title">{art.title}</span>
+                <span className="parrish__art-artist">by {art.artist}</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
 
       <section className="parrish__calendar">
         <div className="parrish__calendar-header">
