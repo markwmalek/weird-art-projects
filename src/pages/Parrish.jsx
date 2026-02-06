@@ -4,7 +4,7 @@ import ContactCard from '../components/ContactCard';
 import './Parrish.css';
 
 const events = [
-  { day: 6, title: 'Launch Party', time: '6 PM - 9 PM', admission: 'Free', description: 'In no particular order: painting (v), paintings (n), puppets, popcorn, bubbly. Vinyl curated by Alison Matney of Bull City Vintage, featuring Jeghetto, Greta Boney, and the Weirdos.', link: null },
+  { day: 6, title: 'Launch Party', time: '6 PM - 9 PM', admission: 'Free', description: 'In no particular order: painting (v), paintings (n), puppets, popcorn, bubbly. Vinyl curated by Alison Matney of Bull City Vintage, featuring Jeghetto, Greta Boney, and the Weirdos. Casual and fun. Come by, say hey.', link: null },
   { day: 8, title: "Crowded Table Club: Galentine's Day x Black History Month Paint n Sip", time: '2 PM - 4 PM', admission: '$35', description: 'Led by local artist, stylist and all around icon, Sabrina Servance.', link: 'https://www.eventbrite.com/e/crowded-table-club-galentines-day-x-black-history-month-paint-n-sip-tickets-1980640527134' },
   { day: 8, title: 'Music Video Shoot', time: '6 PM - 9 PM', admission: null, description: 'With Hugh Swaso and Irene Hui of Jade Rabbit Co.', link: 'https://www.instagram.com/hughswaso/' },
   { day: 10, title: 'In TRUE Form Podcast LIVE', time: '8 PM - 9 PM', admission: 'Free', description: 'Live recording featuring host Corey Truesdale and guest Amos Cooper Jr. of Black Robin Ventures. The episode will premiere on YouTube with audio available on streaming platforms.', link: 'https://www.instagram.com/intrueform_' },
