@@ -240,7 +240,7 @@
 }
 
 .parrish__cal-event h4 {
-  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
   margin-bottom: 0.35rem;
 }
 
@@ -329,7 +329,7 @@
 }
 
 .parrish__list-info h4 {
-  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
   margin-bottom: 0.35rem;
 }
 
