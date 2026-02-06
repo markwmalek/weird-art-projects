@@ -185,6 +185,8 @@
   color: #999;
   text-transform: uppercase;
   padding: 0.5rem 0;
+  background: var(--color-white);
+  border-radius: 8px;
 }
 
 .parrish__cal-grid {
