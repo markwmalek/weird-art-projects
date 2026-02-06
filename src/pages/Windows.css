@@ -1,0 +1,263 @@
+.windows__hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 80vh;
+}
+
+.windows__hero-text {
+  padding: 4rem var(--gutter);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.windows__hero-top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.windows__hero-text h1 {
+  font-size: clamp(3.5rem, 7vw, 6rem);
+}
+
+.windows__date {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.windows__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.windows__map-link {
+  text-decoration: underline !important;
+  font-weight: 600;
+  color: var(--color-blue);
+}
+
+.windows__hero-graphic {
+  overflow: hidden;
+  position: relative;
+}
+
+.windows__poster-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Map section */
+.windows__map-section {
+  background: var(--color-bg-cream);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 4rem var(--gutter);
+}
+
+.windows__map-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.windows__map-content h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.windows__map-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.windows__map-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.windows__map-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Highlights */
+.windows__highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 3rem var(--gutter);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.windows__highlight {
+  position: relative;
+  aspect-ratio: 4/3;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.windows__highlight img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.windows__highlight-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  color: var(--color-white);
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  text-transform: uppercase;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  background: linear-gradient(transparent, rgba(0,0,0,0.5));
+}
+
+/* Artists */
+.windows__artists {
+  padding: 4rem var(--gutter);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.windows__artists-title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-bottom: 3rem;
+}
+
+.windows__artist-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.windows__artist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.windows__artist--reverse {
+  direction: rtl;
+}
+
+.windows__artist--reverse > * {
+  direction: ltr;
+}
+
+.windows__artist-image {
+  overflow: hidden;
+}
+
+.windows__artist-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.windows__artist-info {
+  background: var(--color-bg-cream);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.windows__artist-info h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  margin-bottom: 0.5rem;
+}
+
+.windows__artist-location {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.windows__artist-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Sponsors */
+.windows__sponsors {
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 3rem var(--gutter);
+}
+
+.windows__sponsors h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-bottom: 2rem;
+}
+
+.windows__sponsor-logos {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.windows__sponsor img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 768px) {
+  .windows__hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .windows__hero-graphic {
+    min-height: 300px;
+    order: -1;
+  }
+
+  .windows__map-section {
+    grid-template-columns: 1fr;
+  }
+
+  .windows__highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .windows__artist {
+    grid-template-columns: 1fr;
+  }
+
+  .windows__artist--reverse {
+    direction: ltr;
+  }
+
+  .windows__artist-image img {
+    min-height: 200px;
+  }
+}

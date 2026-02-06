@@ -1,0 +1,455 @@
+.parrish__hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 80vh;
+}
+
+.parrish__hero-text {
+  padding: 4rem var(--gutter);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.parrish__hero-top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.parrish__hero-text h1 {
+  font-size: clamp(3.5rem, 7vw, 6rem);
+}
+
+.parrish__date {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.parrish__desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.parrish__desc a {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.parrish__hero-graphic {
+  overflow: hidden;
+  position: relative;
+}
+
+.parrish__poster-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Calendar section */
+.parrish__calendar {
+  background: var(--color-bg-cream);
+  padding: 4rem var(--gutter);
+}
+
+.parrish__calendar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.parrish__section-title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  text-align: center;
+}
+
+.parrish__view-toggle {
+  display: flex;
+  background: var(--color-white);
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.parrish__view-btn {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.4rem 1.25rem;
+  border-radius: 8px;
+  color: #999;
+  transition: background 0.2s, color 0.2s;
+}
+
+.parrish__view-btn--active {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.parrish__cal-layout {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.parrish__cal {
+  flex-shrink: 0;
+}
+
+.parrish__cal-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.parrish__cal-dow {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #999;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+}
+
+.parrish__cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.parrish__cal-cell {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background: var(--color-white);
+  border-radius: 12px;
+  font-family: var(--font-display);
+  color: #ccc;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.parrish__cal-cell--empty {
+  background: transparent;
+}
+
+.parrish__cal-cell--open {
+  color: var(--color-black);
+  cursor: pointer;
+}
+
+.parrish__cal-cell--open:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+  transform: scale(1.05);
+}
+
+.parrish__cal-cell--open:hover .parrish__cal-open-label,
+.parrish__cal-cell--open:hover .parrish__cal-event-count {
+  color: var(--color-white);
+}
+
+.parrish__cal-cell--selected {
+  background: var(--color-black);
+  color: var(--color-white);
+  transform: scale(1.05);
+}
+
+.parrish__cal-cell--selected .parrish__cal-open-label,
+.parrish__cal-cell--selected .parrish__cal-event-count {
+  color: var(--color-white);
+}
+
+.parrish__cal-day {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  line-height: 1;
+}
+
+.parrish__cal-event-count {
+  font-family: var(--font-body);
+  font-size: 0.55rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-blue);
+  line-height: 1;
+}
+
+.parrish__cal-open-label {
+  font-family: var(--font-body);
+  font-size: 0.55rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #999;
+  line-height: 1;
+}
+
+.parrish__cal-detail-wrapper {
+  min-width: 0;
+}
+
+/* Event detail panel */
+.parrish__cal-detail {
+  margin-top: 1.5rem;
+  background: var(--color-white);
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.parrish__cal-detail--empty {
+  display: none;
+}
+
+.parrish__cal-detail-hint {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.parrish__cal-detail-date {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.parrish__cal-open-hours {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #555;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0.5rem;
+}
+
+.parrish__cal-event {
+  padding: 1rem 0;
+}
+
+.parrish__cal-event + .parrish__cal-event {
+  border-top: 1px solid #f0f0f0;
+}
+
+.parrish__cal-event h4 {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  margin-bottom: 0.35rem;
+}
+
+.parrish__cal-event-time {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.parrish__cal-event-admission {
+  background: var(--color-black);
+  color: var(--color-white);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.parrish__cal-event-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* List view */
+.parrish__list {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--color-white);
+  border-radius: 16px;
+  padding: 1rem 2rem;
+}
+
+.parrish__list-item {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem 0;
+}
+
+.parrish__list-item + .parrish__list-item {
+  border-top: 1px solid #f0f0f0;
+}
+
+.parrish__list-date {
+  flex-shrink: 0;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+}
+
+.parrish__list-dow {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.parrish__list-day {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.parrish__list-info {
+  min-width: 0;
+}
+
+.parrish__list-info h4 {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  margin-bottom: 0.35rem;
+}
+
+.parrish__list-meta {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Categories */
+.parrish__categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 3rem var(--gutter);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.parrish__category {
+  position: relative;
+  aspect-ratio: 4/3;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.parrish__category img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.parrish__category-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  color: var(--color-white);
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  text-transform: uppercase;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  background: linear-gradient(transparent, rgba(0,0,0,0.5));
+}
+
+/* Sponsors */
+.parrish__sponsors {
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 3rem var(--gutter);
+}
+
+.parrish__sponsors h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-bottom: 2rem;
+}
+
+.parrish__sponsor-logos {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.parrish__sponsor img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.parrish__sponsor:first-child img {
+  filter: none;
+}
+
+@media (min-width: 1024px) {
+  .parrish__cal-layout {
+    max-width: var(--max-width);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .parrish__cal-detail {
+    margin-top: 0;
+    position: sticky;
+    top: 5rem;
+  }
+
+  .parrish__cal-detail--empty {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .parrish__hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .parrish__hero-graphic {
+    min-height: 300px;
+    order: -1;
+  }
+
+  .parrish__cal-cell {
+    border-radius: 8px;
+  }
+
+  .parrish__cal-day {
+    font-size: 1rem;
+  }
+
+  .parrish__cal-detail {
+    padding: 1.5rem;
+  }
+
+  .parrish__categories {
+    grid-template-columns: 1fr;
+  }
+
+  .parrish__sponsor-logos {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+}
