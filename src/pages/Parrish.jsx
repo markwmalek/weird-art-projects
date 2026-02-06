@@ -76,10 +76,8 @@ export default function Parrish() {
     <div className="parrish">
       <section className="parrish__hero">
         <div className="parrish__hero-text">
-          <div className="parrish__hero-top">
-            <h1>Parties on<br />Parrish</h1>
-            <h2 className="parrish__date">February 1 - 28 2026</h2>
-          </div>
+          <h1>Parties on<br />Parrish</h1>
+          <h2 className="parrish__date">February 1 - 28 2026</h2>
           <p className="parrish__desc">
             For the month of February on historic Black Wall Street, Durham creatives take over{' '}
             <a href="https://maps.google.com/?q=104+W+Parrish+St+Durham+NC" target="_blank" rel="noopener noreferrer">

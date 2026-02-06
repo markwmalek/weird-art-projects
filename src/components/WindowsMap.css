@@ -21,7 +21,7 @@
 .windows-map__marker-inner {
   width: 32px;
   height: 32px;
-  background: var(--color-blue);
+  background: var(--color-red);
   border: 3px solid var(--color-white);
   border-radius: 50% 50% 50% 0;
   transform: rotate(-45deg);
@@ -55,7 +55,7 @@
   margin-top: 0.5rem;
   font-weight: 600;
   font-size: 0.85rem;
-  color: var(--color-blue);
+  color: var(--color-red);
   text-decoration: none;
 }
 
@@ -82,7 +82,7 @@
 .windows-map__legend-number {
   width: 28px;
   height: 28px;
-  background: var(--color-blue);
+  background: var(--color-red);
   color: var(--color-white);
   border-radius: 50%;
   display: flex;

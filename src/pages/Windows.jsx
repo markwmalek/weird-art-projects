@@ -78,10 +78,8 @@ export default function Windows() {
     <div className="windows">
       <section className="windows__hero">
         <div className="windows__hero-text">
-          <div className="windows__hero-top">
-            <h1>Weird<br />Windows</h1>
-            <h2 className="windows__date">December 2025</h2>
-          </div>
+          <h1>Weird<br />Windows</h1>
+          <h2 className="windows__date">December 2025</h2>
           <div className="windows__desc">
             <p><strong>Our Weird spin on Macy's holiday windows!</strong></p>
             <p>
