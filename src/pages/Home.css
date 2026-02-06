@@ -112,8 +112,6 @@
    TILES — shared
    ======================== */
 .tiles {
-  max-width: 1080px;
-  margin: 0 auto;
   padding: 0 var(--gutter) 1.25rem;
 }
 
@@ -338,6 +336,11 @@
 
   .tile--text {
     grid-column: span 2;
+  }
+
+  .tile--sticker {
+    grid-column: span 2;
+    min-height: 200px;
   }
 }
 

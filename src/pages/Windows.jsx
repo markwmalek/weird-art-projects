@@ -1,4 +1,5 @@
 import Marquee from '../components/Marquee';
+import ContactCard from '../components/ContactCard';
 import './Windows.css';
 
 const windows = [
@@ -166,6 +167,8 @@ export default function Windows() {
           ))}
         </div>
       </section>
+
+      <ContactCard />
     </div>
   );
 }

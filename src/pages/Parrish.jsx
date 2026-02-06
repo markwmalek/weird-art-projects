@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Marquee from '../components/Marquee';
+import ContactCard from '../components/ContactCard';
 import './Parrish.css';
 
 const events = [
@@ -246,6 +247,8 @@ export default function Parrish() {
           ))}
         </div>
       </section>
+
+      <ContactCard />
     </div>
   );
 }

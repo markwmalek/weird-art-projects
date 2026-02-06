@@ -84,7 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Donate row */}
+      {/* Donate row - hidden until donation system is ready
       <section className="tiles">
         <div className="tile tile--dark tile--full">
           <h2 className="tile__dark-title">Support Art for All</h2>
@@ -94,6 +94,7 @@ export default function Home() {
           <a href="#donate" className="tile__btn">Donate &rarr;</a>
         </div>
       </section>
+      */}
     </div>
   );
 }
