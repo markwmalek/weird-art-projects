@@ -1,5 +1,6 @@
 import Marquee from '../components/Marquee';
 import ContactCard from '../components/ContactCard';
+import WindowsMap from '../components/WindowsMap';
 import './Windows.css';
 
 const windows = [
@@ -87,7 +88,7 @@ export default function Windows() {
               Weird artists transform downtown Durham storefronts into holiday displays to be unveiled
               during Durham's annual tree lighting celebration. Check out our artists below!
             </p>
-            <a href="#" className="windows__map-link">Explore the Walking Map</a>
+            <a href="#map" className="windows__map-link">Explore the Map</a>
           </div>
         </div>
         <div className="windows__hero-graphic">
@@ -103,23 +104,17 @@ export default function Windows() {
         items={['SEE THE WINDOWS', 'ALL MONTH LONG', 'DECEMBER 2025']}
         dark={false}
         speed={25}
+        separatorIcon="/images/lindsay.svg"
       />
 
-      <section className="windows__map-section">
+      <section className="windows__map-section" id="map">
         <div className="windows__map-content">
-          <h2>Snag a Walking Map</h2>
+          <h2>Explore the Windows</h2>
           <p>
-            Walking Maps available at the Kickoff event on Friday, November 21 or at the Downtown
-            Durham Tree Lighting on December 9
+            All 7 displays are within walking distance in downtown Durham. Click a marker to see details and get directions.
           </p>
         </div>
-        <div className="windows__map-image">
-          <img
-            src="/images/windows/walking-map.png"
-            alt="Weird Windows walking map"
-            className="windows__map-img"
-          />
-        </div>
+        <WindowsMap />
       </section>
 
       <section className="windows__highlights">
@@ -155,6 +150,7 @@ export default function Windows() {
         ]}
         dark={true}
         speed={35}
+        separatorIcon="/images/lindsay.svg"
       />
 
       <section className="windows__sponsors">
