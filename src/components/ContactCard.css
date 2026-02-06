@@ -15,7 +15,7 @@
 
 .contact-card__sticker {
   position: absolute;
-  top: -60px;
+  top: -40px;
   left: 50%;
   transform: translateX(-50%);
   width: 140px;
@@ -83,6 +83,6 @@
 
   .contact-card__sticker {
     width: 120px;
-    top: -50px;
+    top: -30px;
   }
 }

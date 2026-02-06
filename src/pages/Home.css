@@ -149,8 +149,6 @@
 }
 
 .tiles__heading {
-  font-size: clamp(1.4rem, 3vw, 2rem);
-  color: #86868b;
   margin-bottom: 1rem;
 }
 
@@ -221,8 +219,7 @@
 }
 
 .tile__title {
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
-  color: var(--color-white);
+  color: var(--color-white) !important;
   line-height: 1.05;
 }
 
@@ -250,9 +247,7 @@
 }
 
 .tile__text-title {
-  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
   margin-bottom: 1rem;
-  color: var(--color-black);
 }
 
 .tile__text-body {
@@ -316,8 +311,7 @@
 }
 
 .tile__dark-title {
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
-  color: var(--color-white);
+  color: var(--color-white) !important;
   margin-bottom: 0.75rem;
 }
 

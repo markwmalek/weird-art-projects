@@ -182,16 +182,18 @@
   background: var(--color-black);
   color: var(--color-white);
   padding: 3rem var(--gutter);
+  text-align: center;
 }
 
 .windows__sponsors h2 {
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: var(--color-white);
   margin-bottom: 2rem;
 }
 
 .windows__sponsor-logos {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 3rem;
   flex-wrap: wrap;
   max-width: var(--max-width);
