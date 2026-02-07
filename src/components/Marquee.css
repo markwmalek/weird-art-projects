@@ -2,8 +2,8 @@
   overflow: hidden;
   white-space: nowrap;
   padding: 1rem 0;
-  border-top: 2px solid var(--color-black);
-  border-bottom: 2px solid var(--color-black);
+  border-top: 2px solid var(--color-border-light);
+  border-bottom: 2px solid var(--color-border-light);
 }
 
 .marquee--dark {

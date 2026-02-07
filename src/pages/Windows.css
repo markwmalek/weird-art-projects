@@ -34,7 +34,7 @@
 
 .windows__hero-graphic {
   display: flex;
-  border-left: 2px solid var(--color-black);
+  border-left: 2px solid var(--color-border-light);
 }
 
 .windows__poster-img {
@@ -168,7 +168,7 @@
 
 .windows__artist-location {
   font-size: 0.85rem;
-  color: #555;
+  color: var(--color-text-muted);
   margin-bottom: 1rem;
 }
 
@@ -215,7 +215,7 @@
   .windows__hero-graphic {
     order: -1;
     border-left: none;
-    border-bottom: 2px solid var(--color-black);
+    border-bottom: 2px solid var(--color-border-light);
   }
 
 
