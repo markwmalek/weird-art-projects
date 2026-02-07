@@ -7,7 +7,7 @@ const upcomingEvents = [
     title: 'Parties on Parrish',
     date: 'FEB 1 - 28, 2026',
     venue: 'Black Wall Street',
-    image: '/images/home/hero-event.jpg',
+    image: '/images/home/hero-event.png',
     link: '/parrish',
   },
   {
