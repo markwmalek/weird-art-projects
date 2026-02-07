@@ -37,23 +37,22 @@ function getEventsForDay(day) {
 }
 
 const categories = [
-  { label: 'Live Painting', image: '/images/parrish/live-painting.jpg' },
-  { label: 'Music', image: '/images/parrish/music.jpg' },
-  { label: 'Poetry', image: '/images/parrish/poetry.jpg' },
+  { label: 'Live Painting', image: '/images/parrish/live-painting.png' },
+  { label: 'Puppetry', image: '/images/parrish/puppetry.png' },
+  { label: 'Art', image: '/images/parrish/art-category.png' },
 ];
 
 const artworks = [
-  { title: 'Open Water', artist: 'Reneesha Mccoy', image: '/images/parrish/art/open-water-reneesha-mccoy.png', link: 'https://fa7b88-3.myshopify.com/products/open-water-by-reneesha-mccoy' },
-  { title: 'Bloom', artist: 'Reneesha Mccoy', image: '/images/parrish/art/bloom-reneesha-mccoy.png', link: 'https://fa7b88-3.myshopify.com/products/bloom-by-reneesha-mccoy' },
-  { title: 'Cluster', artist: 'Reneesha Mccoy', image: '/images/parrish/art/cluster-reneesha-mccoy.png', link: 'https://fa7b88-3.myshopify.com/products/cluster-by-reneesha-mccoy' },
-  { title: 'Submerging', artist: 'LARA', image: '/images/parrish/art/submerging-lara.jpg', link: 'https://fa7b88-3.myshopify.com/products/submerging-by-lara' },
-  { title: 'Headphone Toad', artist: 'Myles Brown', image: '/images/parrish/art/headphone-toad-myles-brown.jpg', link: 'https://fa7b88-3.myshopify.com/products/headphone-toad-by-myles-brown' },
   { title: 'Aurora', artist: 'Zeus Alexander', image: '/images/parrish/art/aurora-zeus-alexander.jpg', link: 'https://fa7b88-3.myshopify.com/products/aurora-by-zeus-alexander' },
   { title: 'Sanctum', artist: 'Zeus Alexander', image: '/images/parrish/art/sanctum-zeus-alexander.jpg', link: 'https://fa7b88-3.myshopify.com/products/sanctum-by-zeus-alexander' },
   { title: 'Growth', artist: 'Zeus Alexander', image: '/images/parrish/art/growth-zeus-alexander.jpg', link: 'https://fa7b88-3.myshopify.com/products/growth-by-zeus-alexander' },
   { title: 'Veilform', artist: 'Zeus Alexander', image: '/images/parrish/art/veilform-zeus-alexander.jpg', link: 'https://fa7b88-3.myshopify.com/products/veilform-by-zeus-alexander' },
   { title: 'Verdant Ascension', artist: 'Zeus Alexander', image: '/images/parrish/art/verdant-ascension-zeus-alexander.jpg', link: 'https://fa7b88-3.myshopify.com/products/verdant-ascension-by-zeus-alexander' },
-  { title: 'Loon', artist: 'Sabrina Servance', image: '/images/parrish/art/loon-sabrina-servance.jpg', link: 'https://fa7b88-3.myshopify.com/products/loon-by-sabrina-servance' },
+  { title: 'Open Water', artist: 'Reneesha Mccoy', image: '/images/parrish/art/open-water-reneesha-mccoy.png', link: 'https://fa7b88-3.myshopify.com/products/open-water-by-reneesha-mccoy' },
+  { title: 'Bloom', artist: 'Reneesha Mccoy', image: '/images/parrish/art/bloom-reneesha-mccoy.png', link: 'https://fa7b88-3.myshopify.com/products/bloom-by-reneesha-mccoy' },
+  { title: 'Cluster', artist: 'Reneesha Mccoy', image: '/images/parrish/art/cluster-reneesha-mccoy.png', link: 'https://fa7b88-3.myshopify.com/products/cluster-by-reneesha-mccoy' },
+  { title: 'Submerging', artist: 'LARA', image: '/images/parrish/art/submerging-lara.jpg', link: 'https://fa7b88-3.myshopify.com/products/submerging-by-lara' },
+  { title: 'Headphone Toad', artist: 'Myles Brown', image: '/images/parrish/art/headphone-toad-myles-brown.jpg', link: 'https://fa7b88-3.myshopify.com/products/headphone-toad-by-myles-brown' },
   { title: 'High Pollination', artist: 'Sabrina Servance', image: '/images/parrish/art/high-pollination-sabrina-servance.jpg', link: 'https://fa7b88-3.myshopify.com/products/high-pollination-by-sabrina-servance' },
   { title: 'Patin', artist: 'Sabrina Servance', image: '/images/parrish/art/patin-sabrina-servance.jpg', link: 'https://fa7b88-3.myshopify.com/products/patin-by-sabrina-servance' },
   { title: 'The Void', artist: 'Dawn R. Taylor', image: '/images/parrish/art/the-void-dawn-taylor.jpg', link: 'https://fa7b88-3.myshopify.com/products/the-void-by-dawn-r-taylor' },
@@ -234,7 +233,7 @@ export default function Parrish() {
                   <div className="parrish__cal-open-hours">
                     Open 10 AM – 3 PM
                     <p className="parrish__cal-event-desc" style={{ marginTop: '0.5rem' }}>
-                      Stop by to explore the space — no special programming today, but you're always welcome.
+                      Stop by to explore the space and buy art! No special programming today, unless you have a great idea. Shoot us a DM to discuss!
                     </p>
                   </div>
                 ) : null}
