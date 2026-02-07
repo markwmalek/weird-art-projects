@@ -100,7 +100,7 @@
   bottom: 0;
   left: 0;
   padding: 1.5rem;
-  color: var(--color-white);
+  color: #ffffff;
   font-family: var(--font-display);
   font-size: clamp(1.2rem, 2.5vw, 1.8rem);
   text-transform: uppercase;
@@ -179,14 +179,14 @@
 
 /* Sponsors */
 .windows__sponsors {
-  background: var(--color-black);
-  color: var(--color-white);
+  background: #000000;
+  color: #ffffff;
   padding: 3rem var(--gutter);
   text-align: center;
 }
 
 .windows__sponsors h2 {
-  color: var(--color-white);
+  color: #ffffff;
   margin-bottom: 2rem;
 }
 

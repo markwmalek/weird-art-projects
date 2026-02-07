@@ -25,6 +25,12 @@
   display: block;
 }
 
+@media (prefers-color-scheme: dark) {
+  .hero__svg .hero-text {
+    fill: #ffffff;
+  }
+}
+
 /* Face wiggle animation */
 .face {
   transform-origin: center center;
@@ -205,7 +211,7 @@
   right: 0;
   padding: 2rem;
   background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.65) 100%);
-  color: var(--color-white);
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
@@ -219,7 +225,7 @@
 }
 
 .tile__title {
-  color: var(--color-white) !important;
+  color: #ffffff !important;
   line-height: 1.05;
 }
 
@@ -311,14 +317,14 @@
 }
 
 .tile__dark-title {
-  color: var(--color-white) !important;
+  color: #ffffff !important;
   margin-bottom: 0.75rem;
 }
 
 .tile__dark-body {
   font-size: 0.9rem;
   line-height: 1.65;
-  color: var(--color-text-muted);
+  color: #a1a1a6;
   margin-bottom: 1.5rem;
 }
 
@@ -327,7 +333,7 @@
   font-family: var(--font-display);
   font-size: 0.85rem;
   text-transform: uppercase;
-  color: var(--color-white);
+  color: #ffffff;
   background: var(--color-blue);
   text-decoration: none;
   padding: 0.7rem 1.75rem;

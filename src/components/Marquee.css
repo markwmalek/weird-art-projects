@@ -7,8 +7,9 @@
 }
 
 .marquee--dark {
-  background: var(--color-black);
-  color: var(--color-white);
+  background: #000000;
+  color: #ffffff;
+  border-color: #000000;
 }
 
 .marquee__track {
