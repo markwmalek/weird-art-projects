@@ -24,13 +24,16 @@ export default function EmailToast() {
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const isNearBottom = currentScrollY + windowHeight >= documentHeight - 100;
 
       // Scrolling down - show toast
       if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
         setVisible(true);
       }
-      // Scrolling up - hide toast (unless subscribed)
-      else if (currentScrollY < lastScrollY.current && !hasSubscribed.current) {
+      // Scrolling up - hide toast (unless subscribed or near bottom of page)
+      else if (currentScrollY < lastScrollY.current && !hasSubscribed.current && !isNearBottom) {
         setVisible(false);
       }
 
