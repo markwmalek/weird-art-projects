@@ -3,15 +3,23 @@
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--color-blue);
-  color: #ffffff;
+  background: #ffffff;
+  color: #1a1a1a;
   padding: 1.25rem 1.5rem;
   border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
   z-index: 1000;
   max-width: 420px;
   width: calc(100% - 2rem);
   display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .email-toast {
+    background: #1a1a1a;
+    color: #e5e5e5;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  }
 }
 
 .email-toast--visible {
@@ -36,7 +44,7 @@
   right: 0.75rem;
   background: none;
   border: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 1.5rem;
   cursor: pointer;
   padding: 0.25rem;
@@ -45,7 +53,16 @@
 }
 
 .email-toast__close:hover {
-  color: #ffffff;
+  color: #1a1a1a;
+}
+
+@media (prefers-color-scheme: dark) {
+  .email-toast__close {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .email-toast__close:hover {
+    color: #ffffff;
+  }
 }
 
 .email-toast__text {
@@ -64,10 +81,10 @@
 .email-toast__input {
   flex: 1;
   padding: 0.6rem 1rem;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   font-size: 0.9rem;
-  background: rgba(255, 255, 255, 0.95);
+  background: #f5f5f5;
   color: #1a1a1a;
 }
 
@@ -77,13 +94,24 @@
 
 .email-toast__input:focus {
   outline: none;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  .email-toast__input {
+    background: #2a2a2a;
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #e5e5e5;
+  }
+  .email-toast__input:focus {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+  }
 }
 
 .email-toast__btn {
   padding: 0.6rem 1.25rem;
-  background: #ffffff;
-  color: var(--color-blue);
+  background: #1a1a1a;
+  color: #ffffff;
   border: none;
   border-radius: 8px;
   font-family: var(--font-display);
@@ -95,13 +123,23 @@
 }
 
 .email-toast__btn:hover {
-  background: rgba(255, 255, 255, 0.9);
+  background: #333333;
   transform: translateY(-1px);
 }
 
 .email-toast__btn:disabled {
   opacity: 0.7;
   cursor: not-allowed;
+}
+
+@media (prefers-color-scheme: dark) {
+  .email-toast__btn {
+    background: #ffffff;
+    color: #1a1a1a;
+  }
+  .email-toast__btn:hover {
+    background: #e5e5e5;
+  }
 }
 
 .email-toast__success {
