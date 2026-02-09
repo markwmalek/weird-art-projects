@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import Parrish from './pages/Parrish';
 import Windows from './pages/Windows';
 import Team from './pages/Team';
-import EmailToast from './components/EmailToast';
+import EmailBanner from './components/EmailBanner';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Route path="/team" element={<Team />} />
         </Routes>
       </Layout>
-      <EmailToast />
+      <EmailBanner />
     </Router>
   );
 }
