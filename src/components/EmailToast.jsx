@@ -1,7 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './EmailToast.css';
 
-const TOAST_DELAY = 5000; // 5 seconds (for testing)
 const STORAGE_KEY = 'emailToastDismissed';
 
 // Mailerlite account and form IDs
@@ -12,17 +11,34 @@ export default function EmailToast() {
   const [visible, setVisible] = useState(false);
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState('idle'); // idle, loading, success, error
+  const lastScrollY = useRef(0);
+  const hasSubscribed = useRef(false);
 
   useEffect(() => {
-    // Check if user has already dismissed or subscribed
+    // Check if user has already subscribed
     const dismissed = localStorage.getItem(STORAGE_KEY);
-    if (dismissed) return;
+    if (dismissed === 'subscribed') {
+      hasSubscribed.current = true;
+      return;
+    }
 
-    const timer = setTimeout(() => {
-      setVisible(true);
-    }, TOAST_DELAY);
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
 
-    return () => clearTimeout(timer);
+      // Scrolling down - show toast
+      if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+        setVisible(true);
+      }
+      // Scrolling up - hide toast (unless subscribed)
+      else if (currentScrollY < lastScrollY.current && !hasSubscribed.current) {
+        setVisible(false);
+      }
+
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   // Load Mailerlite script when toast becomes visible
@@ -45,7 +61,6 @@ export default function EmailToast() {
 
   const handleDismiss = () => {
     setVisible(false);
-    localStorage.setItem(STORAGE_KEY, 'true');
   };
 
   const handleSubmit = async (e) => {
@@ -69,24 +84,22 @@ export default function EmailToast() {
 
       // With no-cors we can't read response, assume success
       setStatus('success');
+      hasSubscribed.current = true;
       localStorage.setItem(STORAGE_KEY, 'subscribed');
-      setTimeout(() => setVisible(false), 2000);
+      setTimeout(() => setVisible(false), 1500);
     } catch (err) {
       setStatus('error');
     }
   };
 
-  if (!visible) return null;
-
   return (
-    <div className="email-toast">
+    <div className={`email-toast ${visible ? 'email-toast--visible' : ''}`}>
       <button className="email-toast__close" onClick={handleDismiss} aria-label="Close">
         ×
       </button>
 
       {status === 'success' ? (
         <div className="email-toast__success">
-          <span className="email-toast__check">✓</span>
           <span>You're on the list!</span>
         </div>
       ) : (
