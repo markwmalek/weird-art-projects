@@ -9,6 +9,7 @@ const ML_FORM_ID = '178957425260364838';
 
 export default function EmailToast() {
   const [visible, setVisible] = useState(false);
+  const [shouldRender, setShouldRender] = useState(false);
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState('idle'); // idle, loading, success, error
   const lastScrollY = useRef(0);
@@ -30,7 +31,9 @@ export default function EmailToast() {
 
       // Scrolling down - show toast
       if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
-        setVisible(true);
+        setShouldRender(true);
+        // Small delay to allow DOM to render before animating
+        requestAnimationFrame(() => setVisible(true));
       }
       // Scrolling up - hide toast (unless subscribed or near bottom of page)
       else if (currentScrollY < lastScrollY.current && !hasSubscribed.current && !isNearBottom) {
@@ -61,6 +64,14 @@ export default function EmailToast() {
     };
     document.head.appendChild(script);
   }, [visible]);
+
+  // Remove from DOM after hide animation completes
+  useEffect(() => {
+    if (!visible && shouldRender) {
+      const timer = setTimeout(() => setShouldRender(false), 400);
+      return () => clearTimeout(timer);
+    }
+  }, [visible, shouldRender]);
 
   const handleDismiss = () => {
     setVisible(false);
@@ -94,6 +105,9 @@ export default function EmailToast() {
       setStatus('error');
     }
   };
+
+  // Don't render anything if not needed
+  if (!shouldRender) return null;
 
   return (
     <div className={`email-toast ${visible ? 'email-toast--visible' : ''}`}>
