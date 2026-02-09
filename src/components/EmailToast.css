@@ -119,7 +119,7 @@
 
 @media (max-width: 480px) {
   .email-toast {
-    bottom: 1rem;
+    bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
     padding: 1.25rem 1.5rem;
     width: calc(100% - 2rem);
   }
