@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './EmailToast.css';
 
-const TOAST_DELAY = 30000; // 30 seconds
+const TOAST_DELAY = 5000; // 5 seconds (for testing)
 const STORAGE_KEY = 'emailToastDismissed';
 
 // Mailerlite account and form IDs
