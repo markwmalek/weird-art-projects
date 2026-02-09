@@ -107,7 +107,7 @@ export default function EmailToast() {
         </div>
       ) : (
         <>
-          <p className="email-toast__text">Stay weird — get updates on our next project</p>
+          <p className="email-toast__text">Get updates on our next project</p>
           <form className="email-toast__form" onSubmit={handleSubmit}>
             <input
               type="email"
