@@ -19,7 +19,8 @@ export default function EmailBanner() {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState('idle');
 
-  if (dismissed) return null;
+  // Keep a tiny spacer so Safari tab bar samples the right color
+  if (dismissed) return <div className="email-banner__spacer" />;
 
   const handleDismiss = () => {
     setDismissed(true);
