@@ -14,15 +14,23 @@ export default function EmailToast() {
   const lastScrollY = useRef(0);
   const hasSubscribed = useRef(false);
 
+  const isDismissed = useRef(false);
+
   useEffect(() => {
-    // Check if user has already subscribed
+    // Check if user has already dismissed or subscribed
     const dismissed = localStorage.getItem(STORAGE_KEY);
-    if (dismissed === 'subscribed') {
-      hasSubscribed.current = true;
+    if (dismissed) {
+      isDismissed.current = true;
+      if (dismissed === 'subscribed') {
+        hasSubscribed.current = true;
+      }
       return;
     }
 
     const handleScroll = () => {
+      // Don't show if already dismissed
+      if (isDismissed.current) return;
+
       const currentScrollY = window.scrollY;
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
@@ -64,6 +72,8 @@ export default function EmailToast() {
 
   const handleDismiss = () => {
     setVisible(false);
+    isDismissed.current = true;
+    localStorage.setItem(STORAGE_KEY, 'dismissed');
   };
 
   const handleSubmit = async (e) => {
