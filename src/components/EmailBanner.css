@@ -1,11 +1,12 @@
-/* Invisible spacer for Safari tab bar color sampling */
+/* Spacer for Safari tab bar color sampling */
 .email-banner__spacer {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 1px;
-  background: transparent;
+  height: env(safe-area-inset-bottom, 1px);
+  min-height: 1px;
+  background: var(--color-bg-cream);
   pointer-events: none;
 }
 
