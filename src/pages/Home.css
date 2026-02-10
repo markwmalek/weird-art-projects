@@ -260,7 +260,7 @@
    HERO SVG TILE
    ======================== */
 .tile--hero-svg {
-  background: var(--color-blue);
+  background: var(--color-white);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -65,18 +65,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats row */}
-      <section className="stats">
-        <div className="stats__item">
-          <span className="stats__num">501(c)(3)</span>
-          <span className="stats__label">Nonprofit</span>
-        </div>
-        <div className="stats__item">
-          <span className="stats__num">Durham</span>
-          <span className="stats__label">North Carolina</span>
-        </div>
-      </section>
-
       {/* Donate row - hidden until donation system is ready
       <section className="tiles">
         <div className="tile tile--dark tile--full">
