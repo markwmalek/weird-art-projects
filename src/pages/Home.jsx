@@ -24,7 +24,6 @@ export default function Home() {
     <div className="home">
       {/* Events tiles */}
       <section className="tiles tiles--top">
-        <h2 className="tiles__heading">Our Projects</h2>
         <div className="tiles__grid">
           <AppLink to={upcomingEvents[0].link} className="tile tile--lg">
             <img src={upcomingEvents[0].image} alt={upcomingEvents[0].title} className="tile__img" />
