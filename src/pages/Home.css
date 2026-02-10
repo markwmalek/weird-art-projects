@@ -132,6 +132,13 @@
 
 .tiles--top {
   padding-top: 2rem;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+}
+
+.tiles--top .tiles__grid {
+  flex: 1;
 }
 
 .tiles__heading {
@@ -167,6 +174,7 @@
 .tile--lg,
 .tile--sm {
   min-height: 420px;
+  height: 100%;
 }
 
 .tile__img {
