@@ -75,18 +75,18 @@
 }
 
 @keyframes face-colors-left {
-  0% { fill: #e85d4c; }
-  20% { fill: #9b59b6; }
-  40% { fill: #3498db; }
-  60% { fill: #27ae60; }
-  80% { fill: #f39c12; }
+  0% { fill: #3d5afe; }
+  20% { fill: #7c4dff; }
+  40% { fill: #536dfe; }
+  60% { fill: #448aff; }
+  80% { fill: #6c63ff; }
 }
 
 @keyframes face-colors-right {
-  0% { fill: #e74c8c; }
-  25% { fill: #1abc9c; }
-  50% { fill: #e67e22; }
-  75% { fill: #8e44ad; }
+  0% { fill: #536dfe; }
+  25% { fill: #3d5afe; }
+  50% { fill: #7c4dff; }
+  75% { fill: #448aff; }
 }
 
 
