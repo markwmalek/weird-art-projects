@@ -22,27 +22,8 @@ const upcomingEvents = [
 export default function Home() {
   return (
     <div className="home">
-      {/* Hero */}
-      <section className="hero">
-        <div className="hero__svg">
-          <HeroSvg />
-        </div>
-      </section>
-
-      {/* Stats row */}
-      <section className="stats">
-        <div className="stats__item">
-          <span className="stats__num">501(c)(3)</span>
-          <span className="stats__label">Nonprofit</span>
-        </div>
-        <div className="stats__item">
-          <span className="stats__num">Durham</span>
-          <span className="stats__label">North Carolina</span>
-        </div>
-      </section>
-
       {/* Events tiles */}
-      <section className="tiles">
+      <section className="tiles tiles--top">
         <h2 className="tiles__heading">Our Projects</h2>
         <div className="tiles__grid">
           <AppLink to={upcomingEvents[0].link} className="tile tile--lg">
@@ -65,7 +46,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About + sticker row */}
+      {/* About + animated logo row */}
       <section className="tiles">
         <div className="tiles__grid">
           <div className="tile tile--text">
@@ -78,9 +59,21 @@ export default function Home() {
             <AppLink to="/team" className="tile__link">Meet the Team &rarr;</AppLink>
           </div>
 
-          <div className="tile tile--sticker">
-            <img src="/images/home/logo-sticker.png" alt="Weird Art Projects" />
+          <div className="tile tile--hero-svg">
+            <HeroSvg />
           </div>
+        </div>
+      </section>
+
+      {/* Stats row */}
+      <section className="stats">
+        <div className="stats__item">
+          <span className="stats__num">501(c)(3)</span>
+          <span className="stats__label">Nonprofit</span>
+        </div>
+        <div className="stats__item">
+          <span className="stats__num">Durham</span>
+          <span className="stats__label">North Carolina</span>
         </div>
       </section>
 
