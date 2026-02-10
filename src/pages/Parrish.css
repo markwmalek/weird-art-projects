@@ -34,12 +34,6 @@
   border-left: 2px solid var(--color-border-light);
 }
 
-@media (prefers-color-scheme: dark) {
-  .parrish__hero-graphic {
-    border-left-color: var(--color-border-light);
-  }
-}
-
 .parrish__poster-img {
   width: 100%;
   height: auto;

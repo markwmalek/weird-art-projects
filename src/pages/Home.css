@@ -25,12 +25,6 @@
   display: block;
 }
 
-@media (prefers-color-scheme: dark) {
-  .hero__svg .hero-text {
-    fill: #ffffff;
-  }
-}
-
 /* Face wiggle animation */
 .face {
   transform-origin: center center;
