@@ -180,13 +180,11 @@ export default function Parrish() {
                 const hasEvents = dayEvents.length > 0;
                 const isSelected = selectedDay === day;
                 const open = isOpen(day);
-                const clickable = hasEvents || open;
                 return (
                   <button
                     key={day}
-                    className={`parrish__cal-cell${open ? ' parrish__cal-cell--open' : ''}${isSelected ? ' parrish__cal-cell--selected' : ''}`}
-                    onClick={() => clickable && setSelectedDay(isSelected ? null : day)}
-                    disabled={!clickable}
+                    className={`parrish__cal-cell${open ? ' parrish__cal-cell--open' : ' parrish__cal-cell--closed'}${isSelected ? ' parrish__cal-cell--selected' : ''}`}
+                    onClick={() => setSelectedDay(isSelected ? null : day)}
                   >
                     <span className="parrish__cal-day">{day}</span>
                     {hasEvents ? (
@@ -234,7 +232,13 @@ export default function Parrish() {
                       Stop by to explore the space and buy art! No special programming today, unless you have a great idea. Shoot us a DM to discuss!
                     </p>
                   </div>
-                ) : null}
+                ) : (
+                  <p className="parrish__cal-event-desc">
+                    We're closed today, but{' '}
+                    <a href="mailto:lindsay@weirdproductions.art">shoot us an email</a>{' '}
+                    if you want to host an event!
+                  </p>
+                )}
               </div>
             ) : (
               <div className="parrish__cal-detail parrish__cal-detail--empty">

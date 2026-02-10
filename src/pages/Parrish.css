@@ -218,6 +218,14 @@
   cursor: pointer;
 }
 
+.parrish__cal-cell--closed {
+  cursor: pointer;
+}
+
+.parrish__cal-cell--closed:hover {
+  background: var(--color-hover-bg);
+}
+
 .parrish__cal-cell--open:hover {
   background: var(--color-black);
   color: var(--color-white);
@@ -338,6 +346,12 @@
   font-size: 0.9rem;
   line-height: 1.6;
   color: var(--color-text-muted);
+}
+
+.parrish__cal-event-desc a {
+  color: var(--color-blue);
+  text-decoration: underline;
+  font-weight: 500;
 }
 
 .parrish__cal-event-link {
