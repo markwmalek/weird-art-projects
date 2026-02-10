@@ -130,17 +130,6 @@
   padding: 0 var(--gutter) 1.25rem;
 }
 
-.tiles--top {
-  padding-top: 2rem;
-  min-height: calc(100vh - 60px);
-  display: flex;
-  flex-direction: column;
-}
-
-.tiles--top .tiles__grid {
-  flex: 1;
-}
-
 .tiles__heading {
   margin-bottom: 1rem;
 }
@@ -174,7 +163,6 @@
 .tile--lg,
 .tile--sm {
   min-height: 420px;
-  height: 100%;
 }
 
 .tile__img {
@@ -265,20 +253,26 @@
 }
 
 /* ========================
-   HERO SVG TILE
+   STICKER TILE
    ======================== */
-.tile--hero-svg {
-  background: var(--color-white);
+.tile--sticker {
+  background: var(--color-blue);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 2.5rem;
 }
 
-.tile--hero-svg svg {
-  width: 100%;
+.tile--sticker img {
+  width: 80%;
+  max-width: 180px;
   height: auto;
-  max-width: 400px;
+  filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.15));
+  transition: transform 0.4s ease;
+}
+
+.tile--sticker:hover img {
+  transform: scale(1.08) rotate(-4deg);
 }
 
 /* ========================
@@ -353,7 +347,7 @@
     grid-column: span 2;
   }
 
-  .tile--hero-svg {
+  .tile--sticker {
     grid-column: span 2;
     min-height: 200px;
   }
