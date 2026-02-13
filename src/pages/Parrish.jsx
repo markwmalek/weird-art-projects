@@ -41,6 +41,11 @@ const categories = [
 ];
 
 const artworks = [
+  { title: 'Protection', artist: 'Gemynii', image: '/images/parrish/art/protection-gemynii.jpg', link: 'https://fa7b88-3.myshopify.com/products/protection-by-gemynii' },
+  { title: 'The Bluez', artist: 'Gemynii', image: '/images/parrish/art/the-bluez-gemynii.jpg', link: 'https://fa7b88-3.myshopify.com/products/the-bluez-by-gemynii' },
+  { title: 'We Been Here', artist: 'Gemynii', image: '/images/parrish/art/we-been-here-gemynii.jpg', link: 'https://fa7b88-3.myshopify.com/products/we-been-here-by-gemynii' },
+  { title: 'Open', artist: 'Gemynii', image: '/images/parrish/art/open-gemynii.jpg', link: 'https://fa7b88-3.myshopify.com/products/open-by-gemynii' },
+  { title: 'Mayowa', artist: 'Gemynii', image: '/images/parrish/art/mayowa-gemynii.jpg', link: 'https://fa7b88-3.myshopify.com/products/mayowa-by-gemynii' },
   { title: 'Aurora', artist: 'Zeus Alexander', image: '/images/parrish/art/aurora-zeus-alexander.jpg', link: 'https://fa7b88-3.myshopify.com/products/aurora-by-zeus-alexander' },
   { title: 'Sanctum', artist: 'Zeus Alexander', image: '/images/parrish/art/sanctum-zeus-alexander.jpg', link: 'https://fa7b88-3.myshopify.com/products/sanctum-by-zeus-alexander' },
   { title: 'Growth', artist: 'Zeus Alexander', image: '/images/parrish/art/growth-zeus-alexander.jpg', link: 'https://fa7b88-3.myshopify.com/products/growth-by-zeus-alexander' },
@@ -52,7 +57,7 @@ const artworks = [
   { title: 'Submerging', artist: 'LARA', image: '/images/parrish/art/submerging-lara.jpg', link: 'https://fa7b88-3.myshopify.com/products/submerging-by-lara' },
   { title: 'Headphone Toad', artist: 'Myles Brown', image: '/images/parrish/art/headphone-toad-myles-brown.jpg', link: 'https://fa7b88-3.myshopify.com/products/headphone-toad-by-myles-brown' },
   { title: 'High Pollination', artist: 'Sabrina Servance', image: '/images/parrish/art/high-pollination-sabrina-servance.jpg', link: 'https://fa7b88-3.myshopify.com/products/high-pollination-by-sabrina-servance' },
-  { title: 'Patin', artist: 'Sabrina Servance', image: '/images/parrish/art/patin-sabrina-servance.jpg', link: 'https://fa7b88-3.myshopify.com/products/patin-by-sabrina-servance' },
+  { title: 'Loon', artist: 'Sabrina Servance', image: '/images/parrish/art/patin-sabrina-servance.jpg', link: 'https://fa7b88-3.myshopify.com/products/patin-by-sabrina-servance' },
   { title: 'The Void', artist: 'Dawn R. Taylor', image: '/images/parrish/art/the-void-dawn-taylor.jpg', link: 'https://fa7b88-3.myshopify.com/products/the-void-by-dawn-r-taylor' },
   { title: 'Yin and Yang before Zen', artist: 'Dawn R. Taylor', image: '/images/parrish/art/yin-yang-zen-dawn-taylor.jpg', link: 'https://fa7b88-3.myshopify.com/products/yin-and-yang-before-zen-by-dawn-r-taylor' },
   { title: 'Loves Me Not', artist: 'IZA', image: '/images/parrish/art/loves-me-not-iza.jpg', link: 'https://fa7b88-3.myshopify.com/products/loves-me-not-by-iza' },
