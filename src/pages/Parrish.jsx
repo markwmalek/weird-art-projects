@@ -56,7 +56,6 @@ const artworks = [
   { title: 'Cluster', artist: 'Reneesha Mccoy', image: '/images/parrish/art/cluster-reneesha-mccoy.png', link: 'https://fa7b88-3.myshopify.com/products/cluster-by-reneesha-mccoy' },
   { title: 'Submerging', artist: 'LARA', image: '/images/parrish/art/submerging-lara.jpg', link: 'https://fa7b88-3.myshopify.com/products/submerging-by-lara' },
   { title: 'Headphone Toad', artist: 'Myles Brown', image: '/images/parrish/art/headphone-toad-myles-brown.jpg', link: 'https://fa7b88-3.myshopify.com/products/headphone-toad-by-myles-brown' },
-  { title: 'High Pollination', artist: 'Sabrina Servance', image: '/images/parrish/art/high-pollination-sabrina-servance.jpg', link: 'https://fa7b88-3.myshopify.com/products/high-pollination-by-sabrina-servance' },
   { title: 'Loon', artist: 'Sabrina Servance', image: '/images/parrish/art/patin-sabrina-servance.jpg', link: 'https://fa7b88-3.myshopify.com/products/patin-by-sabrina-servance' },
   { title: 'The Void', artist: 'Dawn R. Taylor', image: '/images/parrish/art/the-void-dawn-taylor.jpg', link: 'https://fa7b88-3.myshopify.com/products/the-void-by-dawn-r-taylor' },
   { title: 'Yin and Yang before Zen', artist: 'Dawn R. Taylor', image: '/images/parrish/art/yin-yang-zen-dawn-taylor.jpg', link: 'https://fa7b88-3.myshopify.com/products/yin-and-yang-before-zen-by-dawn-r-taylor' },
