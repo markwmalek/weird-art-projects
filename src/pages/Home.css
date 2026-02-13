@@ -261,9 +261,10 @@
   align-items: center;
   justify-content: center;
   padding: 2.5rem;
+  position: relative;
 }
 
-.tile--sticker img {
+.tile--sticker .sticker-main {
   width: 80%;
   max-width: 180px;
   height: auto;
@@ -271,8 +272,23 @@
   transition: transform 0.4s ease;
 }
 
-.tile--sticker:hover img {
+.tile--sticker .sticker-mimi {
+  position: absolute;
+  width: 45%;
+  max-width: 100px;
+  height: auto;
+  bottom: 10%;
+  right: 10%;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+  transition: transform 0.4s ease;
+}
+
+.tile--sticker:hover .sticker-main {
   transform: scale(1.08) rotate(-4deg);
+}
+
+.tile--sticker:hover .sticker-mimi {
+  transform: scale(1.12) rotate(6deg);
 }
 
 /* ========================

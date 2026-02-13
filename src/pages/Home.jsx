@@ -79,7 +79,8 @@ export default function Home() {
           </div>
 
           <div className="tile tile--sticker">
-            <img src="/images/home/logo-sticker.png" alt="Weird Art Projects" />
+            <img src="/images/home/logo-sticker.png" alt="Weird Art Projects" className="sticker-main" />
+            <img src="/images/home/Mimi Sticker.svg" alt="Mimi" className="sticker-mimi" />
           </div>
         </div>
       </section>
