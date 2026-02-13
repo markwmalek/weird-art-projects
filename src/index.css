@@ -46,6 +46,11 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: url('/images/cursors/mimi-cursor.svg') 16 12, auto;
+}
+
+a, button {
+  cursor: url('/images/cursors/mimi-cursor.svg') 16 12, pointer;
 }
 
 img {
