@@ -31,11 +31,11 @@
 }
 
 .face--left {
-  animation: wiggle-left 3s ease-in-out infinite, face-colors-left 4s steps(1) infinite;
+  animation: wiggle-left 3s ease-in-out infinite;
 }
 
 .face--right {
-  animation: wiggle-right 3.5s ease-in-out infinite, face-colors-right 5s steps(1) infinite;
+  animation: wiggle-right 3.5s ease-in-out infinite;
 }
 
 @keyframes wiggle-left {
@@ -72,21 +72,6 @@
   75% {
     transform: translate(0.4px, 0.3px) rotate(1deg);
   }
-}
-
-@keyframes face-colors-left {
-  0% { fill: #3d5afe; }
-  20% { fill: #7c4dff; }
-  40% { fill: #ff7043; }
-  60% { fill: #448aff; }
-  80% { fill: #6c63ff; }
-}
-
-@keyframes face-colors-right {
-  0% { fill: #536dfe; }
-  25% { fill: #ff7043; }
-  50% { fill: #7c4dff; }
-  75% { fill: #3d5afe; }
 }
 
 
