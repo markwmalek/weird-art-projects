@@ -88,84 +88,39 @@
   color: var(--color-black);
 }
 
-/* Mobile bottom navigation bar */
-.nav__mobile-bar {
-  display: none;
+/* Active state for nav link */
+.nav__link--active {
+  background: var(--color-border);
+  color: var(--color-black);
+  border-radius: 20px;
 }
 
 @media (max-width: 768px) {
-  .nav__menu--desktop {
+  .nav__inner {
+    justify-content: center;
+  }
+
+  .nav__logo {
     display: none;
   }
 
-  .nav__mobile-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .nav__menu {
     gap: 1.5rem;
-    padding: 0.85rem var(--gutter) calc(0.85rem + env(safe-area-inset-bottom));
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-top: 1px solid var(--color-border);
   }
 
-  .nav__mobile-link {
-    font-family: var(--font-body);
-    font-size: 0.95rem;
-    font-weight: 400;
-    color: var(--color-text-muted);
+  .nav__link {
     padding: 0.35rem 1rem;
     border-radius: 20px;
-    transition: background 0.2s, color 0.2s;
-    background: none;
-    border: none;
-    cursor: pointer;
   }
 
-  .nav__mobile-link:hover,
-  .nav__mobile-link--active {
+  .nav__link--active {
     background: var(--color-border);
     color: var(--color-black);
   }
 
-  .nav__mobile-dropdown {
-    position: relative;
-  }
-
-  .nav__mobile-dropdown-menu {
-    position: absolute;
-    bottom: calc(100% + 0.75rem);
+  .nav__dropdown-menu {
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid var(--color-border);
-    border-radius: 12px;
-    padding: 0.5rem;
-    min-width: 180px;
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
-  }
-
-  .nav__mobile-dropdown-menu a {
-    display: block;
-    padding: 0.65rem 1rem;
-    font-size: 0.9rem;
-    color: var(--color-text-muted);
-    border-radius: 8px;
-    text-align: center;
-    transition: background 0.15s, color 0.15s;
-  }
-
-  .nav__mobile-dropdown-menu a:hover {
-    background: var(--color-hover-bg);
-    color: var(--color-black);
   }
 }
 

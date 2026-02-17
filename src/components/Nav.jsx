@@ -23,59 +23,34 @@ export default function Nav() {
   };
 
   return (
-    <>
-      {/* Top header */}
-      <header className="nav">
-        <div className="nav__inner">
-          <AppLink to="/" className="nav__logo">
-            Weird Art Projects
-          </AppLink>
+    <header className="nav">
+      <div className="nav__inner">
+        {/* Desktop: logo + nav */}
+        <AppLink to="/" className="nav__logo">
+          Weird Art Projects
+        </AppLink>
 
-          {/* Desktop nav */}
-          <nav className="nav__menu nav__menu--desktop">
-            <AppLink to="/" className="nav__link">Home</AppLink>
+        <nav className="nav__menu">
+          <AppLink to="/" className="nav__link">Home</AppLink>
 
-            <div className="nav__dropdown" ref={projectsRef}>
-              <button
-                className="nav__link"
-                onClick={() => setProjectsOpen(!projectsOpen)}
-              >
-                Projects <span className="nav__arrow">&#9662;</span>
-              </button>
-              {projectsOpen && (
-                <div className="nav__dropdown-menu">
-                  <AppLink to="/windows" onClick={handleProjectClick}>Weird Windows</AppLink>
-                  <AppLink to="/parrish" onClick={handleProjectClick}>Parties on Parrish</AppLink>
-                </div>
-              )}
-            </div>
+          <div className="nav__dropdown" ref={projectsRef}>
+            <button
+              className={`nav__link ${isProjectsPage || projectsOpen ? 'nav__link--active' : ''}`}
+              onClick={() => setProjectsOpen(!projectsOpen)}
+            >
+              Projects <span className="nav__arrow">&#9662;</span>
+            </button>
+            {projectsOpen && (
+              <div className="nav__dropdown-menu">
+                <AppLink to="/windows" onClick={handleProjectClick}>Weird Windows</AppLink>
+                <AppLink to="/parrish" onClick={handleProjectClick}>Parties on Parrish</AppLink>
+              </div>
+            )}
+          </div>
 
-            <AppLink to="/team" className="nav__link">Team</AppLink>
-          </nav>
-        </div>
-      </header>
-
-      {/* Mobile bottom nav */}
-      <nav className="nav__mobile-bar">
-        <AppLink to="/" className="nav__mobile-link">Home</AppLink>
-
-        <div className="nav__mobile-dropdown" ref={projectsRef}>
-          <button
-            className={`nav__mobile-link ${isProjectsPage || projectsOpen ? 'nav__mobile-link--active' : ''}`}
-            onClick={() => setProjectsOpen(!projectsOpen)}
-          >
-            Projects
-          </button>
-          {projectsOpen && (
-            <div className="nav__mobile-dropdown-menu">
-              <AppLink to="/windows" onClick={handleProjectClick}>Weird Windows</AppLink>
-              <AppLink to="/parrish" onClick={handleProjectClick}>Parties on Parrish</AppLink>
-            </div>
-          )}
-        </div>
-
-        <AppLink to="/team" className="nav__mobile-link">Team</AppLink>
-      </nav>
-    </>
+          <AppLink to="/team" className="nav__link">Team</AppLink>
+        </nav>
+      </div>
+    </header>
   );
 }

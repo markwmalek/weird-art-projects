@@ -49,12 +49,6 @@ body {
   cursor: url('/images/cursors/mimi-cursor.svg') 16 12, auto;
 }
 
-@media (max-width: 768px) {
-  body {
-    padding-bottom: calc(60px + env(safe-area-inset-bottom));
-  }
-}
-
 a, button {
   cursor: url('/images/cursors/mimi-cursor.svg') 16 12, pointer;
 }
