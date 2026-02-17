@@ -120,7 +120,7 @@
     font-size: 0.95rem;
     font-weight: 400;
     color: var(--color-text-muted);
-    padding: 0.5rem 1rem;
+    padding: 0.35rem 1rem;
     border-radius: 20px;
     transition: background 0.2s, color 0.2s;
     background: none;
