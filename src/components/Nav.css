@@ -96,6 +96,12 @@
 }
 
 @media (max-width: 768px) {
+  .nav {
+    background: #f0ece4;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
   .nav__inner {
     justify-content: center;
   }
