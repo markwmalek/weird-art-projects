@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './AnnouncementBanner.css';
 
-const STORAGE_KEY = 'announcementBannerDismissed';
+const STORAGE_KEY = 'announcementBannerDismissed2';
 
 const isAlreadyDismissed = () => {
   try {
@@ -25,15 +25,7 @@ export default function AnnouncementBanner() {
     <div className="announcement-banner">
       <div className="announcement-banner__inner">
         <span className="announcement-banner__text">
-          Call for Art: Submit to our Keith Haring inspired event{' '}
-          <a
-            href="https://forms.gle/Aefren717C6AJb4z9"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="announcement-banner__link"
-          >
-            "I ❤️ DRM"
-          </a>
+          Come to the Closing Party for Parties on Parrish — This Saturday at 3PM
         </span>
         <button className="announcement-banner__close" onClick={handleDismiss} aria-label="Close">
           ×
