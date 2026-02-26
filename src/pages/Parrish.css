@@ -79,7 +79,7 @@
 
 .parrish__metric {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 7rem 1fr;
   grid-template-rows: auto auto;
   column-gap: 1.25rem;
   align-items: start;
