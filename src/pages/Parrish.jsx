@@ -132,17 +132,26 @@ export default function Parrish() {
       />
 
       <section className="parrish__metrics">
-        <div className="parrish__metric">
-          <span className="parrish__metric-num">19</span>
-          <span className="parrish__metric-label">Parties</span>
+        <div className="parrish__metrics-intro">
+          <h2 className="parrish__metrics-heading">One month.<br />One block.<br />A lot of weird.</h2>
+          <p className="parrish__metrics-sub">Here's what Durham showed up for at 104 W Parrish St this February.</p>
         </div>
-        <div className="parrish__metric">
-          <span className="parrish__metric-num">25+</span>
-          <span className="parrish__metric-label">Artists</span>
-        </div>
-        <div className="parrish__metric">
-          <span className="parrish__metric-num">6+</span>
-          <span className="parrish__metric-label">Art Pieces Sold</span>
+        <div className="parrish__metrics-stats">
+          <div className="parrish__metric">
+            <span className="parrish__metric-num">19</span>
+            <span className="parrish__metric-label">Parties</span>
+            <span className="parrish__metric-desc">From live podcast recordings to poetry workshops, paint nights to puppet shows — Durham creatives filled every week.</span>
+          </div>
+          <div className="parrish__metric">
+            <span className="parrish__metric-num">25+</span>
+            <span className="parrish__metric-label">Artists</span>
+            <span className="parrish__metric-desc">Painters, photographers, poets, musicians, filmmakers, and more — all rooted in Durham's creative community.</span>
+          </div>
+          <div className="parrish__metric">
+            <span className="parrish__metric-num">6+</span>
+            <span className="parrish__metric-label">Art Pieces Sold</span>
+            <span className="parrish__metric-desc">Original works found new homes — and the month isn't even over yet.</span>
+          </div>
         </div>
       </section>
 
