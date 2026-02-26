@@ -21,7 +21,7 @@ const events = [
   { day: 25, title: 'Open Mic with Azul', time: '5:30 PM - 10 PM', admission: 'Free', description: 'An open mic for the girls, gays, theys, and anyone else who wanders in. Music, poetry, spoken word welcome. Sign up at 5:30 PM, start at 6 PM.', link: 'https://www.instagram.com/azulmzapata/' },
   { day: 26, title: 'Joy By Any Means', time: '6 PM - 10 PM', admission: 'Free', description: 'Join Candy Carver & Friends for JOY By Any Means: An energizing, Joy Playlist followed by a hip hop trivia game night. Enjoy the walls full of artwork, light refreshments and grab some JOY inspired merch or prints.', link: 'https://www.eventbrite.com/e/joy-by-any-means-tickets-1981594769298' },
   { day: 27, title: 'Fashion + Music Industry Game Night', time: '7 PM', admission: null, description: 'Hosted by Mo Dollaz & Mr. Cliché of Needle & Thread Co.', link: 'https://www.instagram.com/needlethreadco/' },
-  { day: 28, title: 'Closing Party - I ❤ DRM', time: 'TBD', admission: 'Free', description: 'Closing party!! HP Fangs partners up with Weird Projects to bring his Keith Haring celebration. Tons of Keith Haring inspired art, live painting, interactive doodle station! Hot dogs, popcorn, and bubbles.', link: 'https://www.instagram.com/hpfangs/' },
+  { day: 28, title: 'Closing Party - I ❤ DRM', time: '3 PM', admission: 'Free', description: 'Closing party!! HP Fangs partners up with Weird Projects to bring his Keith Haring celebration. Tons of Keith Haring inspired art, live painting, interactive doodle station! Hot dogs, popcorn, and bubbles.', link: 'https://www.instagram.com/hpfangs/' },
 ];
 
 const DAYS_OF_WEEK = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
