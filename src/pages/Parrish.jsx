@@ -131,6 +131,21 @@ export default function Parrish() {
         separatorIcon="/images/lindsay.svg"
       />
 
+      <section className="parrish__metrics">
+        <div className="parrish__metric">
+          <span className="parrish__metric-num">19</span>
+          <span className="parrish__metric-label">Events</span>
+        </div>
+        <div className="parrish__metric">
+          <span className="parrish__metric-num">25+</span>
+          <span className="parrish__metric-label">Artists</span>
+        </div>
+        <div className="parrish__metric">
+          <span className="parrish__metric-num">6+</span>
+          <span className="parrish__metric-label">Art Pieces Sold</span>
+        </div>
+      </section>
+
       <section className="parrish__art-scroll">
         <h2 className="parrish__art-heading">Buy Art</h2>
         <div className="parrish__art-track">
