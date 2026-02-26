@@ -134,7 +134,7 @@ export default function Parrish() {
       <section className="parrish__metrics">
         <div className="parrish__metric">
           <span className="parrish__metric-num">19</span>
-          <span className="parrish__metric-label">Events</span>
+          <span className="parrish__metric-label">Parties</span>
         </div>
         <div className="parrish__metric">
           <span className="parrish__metric-num">25+</span>
