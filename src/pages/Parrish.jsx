@@ -179,7 +179,17 @@ export default function Parrish() {
       </section>
 
       <section className="parrish__art-scroll">
-        <h2 className="parrish__art-heading">Buy Art</h2>
+        <div className="parrish__art-heading-row">
+          <h2 className="parrish__art-heading">Buy Art</h2>
+          <a
+            href="https://fa7b88-3.myshopify.com/collections/parties-on-parrish?page=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="parrish__art-see-all"
+          >
+            See All
+          </a>
+        </div>
         <div className="parrish__art-track">
           {artworks.map((art, i) => (
             <a href={art.link} target="_blank" rel="noopener noreferrer" className="parrish__art-item" key={i}>

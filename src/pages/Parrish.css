@@ -136,8 +136,28 @@
   display: none;
 }
 
-.parrish__art-heading {
+.parrish__art-heading-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
   padding: 0 var(--gutter) 1.5rem;
+}
+
+.parrish__art-heading {
+  padding: 0;
+}
+
+.parrish__art-see-all {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.parrish__art-see-all:hover {
+  color: var(--color-black);
 }
 
 .parrish__art-track {
