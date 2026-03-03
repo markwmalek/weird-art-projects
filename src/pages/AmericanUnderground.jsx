@@ -71,13 +71,13 @@ export default function AmericanUnderground() {
         <div className="au__section-inner">
           <p className="au__section-label">Inspiration</p>
           <div className="au__inspiration-grid">
-            <img src="/images/au/page3_X4.png" alt="Inspiration" className="au__inspiration-main" />
+            <img src="/images/au/p3_0.png" alt="Inspiration" className="au__inspiration-main" />
             <div className="au__inspiration-small">
-              <img src="/images/au/page3_X6.png" alt="Inspiration" />
-              <img src="/images/au/page3_X7.png" alt="Inspiration" />
-              <img src="/images/au/page3_X9.png" alt="Inspiration" />
-              <img src="/images/au/page3_X10.png" alt="Inspiration" />
-              <img src="/images/au/page3_X11.png" alt="Inspiration" />
+              <img src="/images/au/p3_1.png" alt="Inspiration" />
+              <img src="/images/au/p3_2.png" alt="Inspiration" />
+              <img src="/images/au/p3_3.jpeg" alt="Inspiration" />
+              <img src="/images/au/p3_4.png" alt="Inspiration" />
+              <img src="/images/au/p3_5.png" alt="Inspiration" />
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@ export default function AmericanUnderground() {
             <p className="au__section-label">The HUB: Lounge — 1st Floor</p>
             <h2 className="au__section-title">A layered industrial-modern retreat blending expressive art, sculptural seating, and warm brick textures.</h2>
           </div>
-          <img src="/images/au/page5_X4.png" alt="The HUB Lounge" className="au__space-hero-img" />
+          <img src="/images/au/p5_0.png" alt="The HUB Lounge" className="au__space-hero-img" />
           <div className="au__space-body">
             <div className="au__space-col">
               <h3 className="au__col-title">Budget</h3>
@@ -146,15 +146,15 @@ export default function AmericanUnderground() {
               <h3 className="au__col-title">Art Selection</h3>
               <div className="au__art-grid">
                 <div className="au__art-item">
-                  <img src="/images/au/page7_X7.png" alt="Bright orange abstract painting" />
+                  <img src="/images/au/p7_0.png" alt="Bright orange abstract painting" />
                   <p className="au__art-label">Bright Orange Abstract Painting <span>Coming from old AU space</span></p>
                 </div>
                 <div className="au__art-item">
-                  <img src="/images/au/page7_X9.png" alt="Custom mural reference by Christian Smith" />
+                  <img src="/images/au/p7_1.png" alt="Custom mural reference by Christian Smith" />
                   <p className="au__art-label">Custom Mural by Christian Smith <span>Custom piece</span></p>
                 </div>
                 <div className="au__art-item">
-                  <img src="/images/au/page7_X10.png" alt="Road sign sculpture" />
+                  <img src="/images/au/p7_2.png" alt="Road sign sculpture" />
                   <p className="au__art-label">Road Sign Sculpture <span>Coming from old AU space</span></p>
                 </div>
               </div>
@@ -169,7 +169,7 @@ export default function AmericanUnderground() {
           <div className="au__space-header">
             <p className="au__section-label">The HUB: Coworking — 1st Floor</p>
           </div>
-          <img src="/images/au/page8_X4.png" alt="The HUB Coworking 1st Floor" className="au__space-hero-img" />
+          <img src="/images/au/p8_0.png" alt="The HUB Coworking 1st Floor" className="au__space-hero-img" />
           <div className="au__space-body">
             <div className="au__space-col">
               <h3 className="au__col-title">Budget</h3>
@@ -194,15 +194,15 @@ export default function AmericanUnderground() {
               <h3 className="au__col-title">Art Selection</h3>
               <div className="au__art-grid">
                 <div className="au__art-item">
-                  <img src="/images/au/page10_X7.png" alt="Flags" />
+                  <img src="/images/au/p10_0.png" alt="Flags" />
                   <p className="au__art-label">Flags (Durham, Pride, Vote, +2 more) <span>Coming from old AU space — Qty: 5</span></p>
                 </div>
                 <div className="au__art-item">
-                  <img src="/images/au/page10_X9.jpg" alt="Custom panels reference" />
+                  <img src="/images/au/p10_1.jpeg" alt="Custom panels reference" />
                   <p className="au__art-label">Custom Panels by Weird <span>Custom piece — Qty: 2</span></p>
                 </div>
                 <div className="au__art-item">
-                  <img src="/images/au/page10_X10.png" alt="Custom mural reference" />
+                  <img src="/images/au/p10_2.png" alt="Custom mural reference" />
                   <p className="au__art-label">Custom Mural by Weird <span>Custom piece — Qty: 1</span></p>
                 </div>
               </div>
@@ -217,7 +217,7 @@ export default function AmericanUnderground() {
           <div className="au__space-header">
             <p className="au__section-label">The HUB: Coworking — 2nd Floor</p>
           </div>
-          <img src="/images/au/page11_X4.png" alt="The HUB Coworking 2nd Floor" className="au__space-hero-img" />
+          <img src="/images/au/p11_0.png" alt="The HUB Coworking 2nd Floor" className="au__space-hero-img" />
           <div className="au__space-body">
             <div className="au__space-col">
               <h3 className="au__col-title">Budget</h3>
@@ -240,7 +240,7 @@ export default function AmericanUnderground() {
               <h3 className="au__col-title">Art Selection</h3>
               <div className="au__art-grid">
                 <div className="au__art-item">
-                  <img src="/images/au/page13_X7.png" alt="Custom paintings" />
+                  <img src="/images/au/p13_0.png" alt="Custom paintings" />
                   <p className="au__art-label">2 Custom Paintings <span>Custom pieces</span></p>
                 </div>
               </div>
@@ -255,7 +255,7 @@ export default function AmericanUnderground() {
           <div className="au__space-header">
             <p className="au__section-label">AU Yearbook Room — 1st Floor</p>
           </div>
-          <img src="/images/au/page14_X4.png" alt="AU Yearbook Room" className="au__space-hero-img" />
+          <img src="/images/au/p14_0.png" alt="AU Yearbook Room" className="au__space-hero-img" />
           <div className="au__space-body">
             <div className="au__space-col">
               <h3 className="au__col-title">Allowance</h3>
@@ -276,23 +276,23 @@ export default function AmericanUnderground() {
               <h3 className="au__col-title">Art Selection</h3>
               <div className="au__art-grid au__art-grid--sm">
                 <div className="au__art-item">
-                  <img src="/images/au/page16_X7.png" alt="Keith Haring Print" />
+                  <img src="/images/au/p16_0.png" alt="Keith Haring Print" />
                   <p className="au__art-label">Keith Haring Print <span>Source from vault</span></p>
                 </div>
                 <div className="au__art-item">
-                  <img src="/images/au/page16_X9.png" alt="Michael Rosenburg Photograph" />
+                  <img src="/images/au/p16_1.png" alt="Michael Rosenburg Photograph" />
                   <p className="au__art-label">Michael Rosenburg Photograph <span>From old AU space</span></p>
                 </div>
                 <div className="au__art-item">
-                  <img src="/images/au/page16_X10.png" alt="Lego Skyline" />
+                  <img src="/images/au/p16_2.png" alt="Lego Skyline" />
                   <p className="au__art-label">Lego Skyline <span>From old AU space</span></p>
                 </div>
                 <div className="au__art-item">
-                  <img src="/images/au/page16_X12.png" alt="Boxer Oil Painting by HT Johnson" />
+                  <img src="/images/au/p16_3.png" alt="Boxer Oil Painting by HT Johnson" />
                   <p className="au__art-label">Boxer Oil Painting by HT Johnson <span>Source from vault</span></p>
                 </div>
                 <div className="au__art-item">
-                  <img src="/images/au/page16_X14.png" alt="Metal Numbers" />
+                  <img src="/images/au/p16_4.png" alt="Metal Numbers" />
                   <p className="au__art-label">Metal Numbers <span>From old AU space — Qty: 2</span></p>
                 </div>
               </div>
@@ -307,25 +307,25 @@ export default function AmericanUnderground() {
           <div className="au__space-header">
             <p className="au__section-label">Assigned Desks — 1st Floor</p>
           </div>
-          <img src="/images/au/page17_X4.png" alt="Assigned Desks" className="au__space-hero-img" />
+          <img src="/images/au/p17_0.png" alt="Assigned Desks" className="au__space-hero-img" />
           <div className="au__space-body">
             <div className="au__space-col au__space-col--full">
               <h3 className="au__col-title">Art Selection</h3>
               <div className="au__art-grid au__art-grid--wide">
                 <div className="au__art-item">
-                  <img src="/images/au/page18_X7.png" alt="White abstract framed piece" />
+                  <img src="/images/au/p18_0.png" alt="White abstract framed piece" />
                   <p className="au__art-label">White Abstract Framed Piece <span>From old AU space</span></p>
                 </div>
                 <div className="au__art-item">
-                  <img src="/images/au/page18_X9.png" alt="Face in Direction Print" />
+                  <img src="/images/au/p18_1.png" alt="Face in Direction Print" />
                   <p className="au__art-label">Face in Direction Print <span>From old AU space</span></p>
                 </div>
                 <div className="au__art-item">
-                  <img src="/images/au/page18_X12.png" alt="4 Horsemen" />
+                  <img src="/images/au/p18_2.png" alt="4 Horsemen" />
                   <p className="au__art-label">4 Horsemen <span>Source from vault</span></p>
                 </div>
                 <div className="au__art-item">
-                  <img src="/images/au/page18_X10.png" alt="Custom Painting by McKayla Walker" />
+                  <img src="/images/au/p18_3.png" alt="Custom Painting by McKayla Walker" />
                   <p className="au__art-label">Custom Painting by McKayla Walker <span>Custom piece</span></p>
                 </div>
               </div>
@@ -346,31 +346,31 @@ export default function AmericanUnderground() {
               <h3 className="au__col-title">Art Selection</h3>
               <div className="au__art-grid au__art-grid--wide">
                 <div className="au__art-item">
-                  <img src="/images/au/page19_X7.png" alt="Red abstract painting" />
+                  <img src="/images/au/p19_0.png" alt="Red abstract painting" />
                   <p className="au__art-label">Red Abstract Painting <span>From old AU space</span></p>
                 </div>
                 <div className="au__art-item">
-                  <img src="/images/au/page19_X9.png" alt="Large multi color abstract" />
+                  <img src="/images/au/p19_1.png" alt="Large multi color abstract" />
                   <p className="au__art-label">Large Multi Color Abstract <span>From old AU space</span></p>
                 </div>
                 <div className="au__art-item">
-                  <img src="/images/au/page19_X11.png" alt="Rothko print" />
+                  <img src="/images/au/p19_2.png" alt="Rothko print" />
                   <p className="au__art-label">Rothko Print + Small Prints <span>From old AU space — Qty: 3</span></p>
                 </div>
                 <div className="au__art-item">
-                  <img src="/images/au/page19_X12.png" alt="Abstract multi color" />
+                  <img src="/images/au/p19_3.png" alt="Abstract multi color" />
                   <p className="au__art-label">Abstract Multi Color <span>From old AU space</span></p>
                 </div>
                 <div className="au__art-item">
-                  <img src="/images/au/page19_X13.png" alt="Black and white landscapes" />
+                  <img src="/images/au/p19_4.png" alt="Black and white landscapes" />
                   <p className="au__art-label">Black & White Landscapes <span>From old AU space — Qty: 2</span></p>
                 </div>
                 <div className="au__art-item">
-                  <img src="/images/au/page19_X15.png" alt="Hallway art" />
+                  <img src="/images/au/p19_5.png" alt="Hallway art" />
                   <p className="au__art-label">Hallway Art <span>From old AU space</span></p>
                 </div>
                 <div className="au__art-item">
-                  <img src="/images/au/page19_X17.png" alt="Hallway art" />
+                  <img src="/images/au/p19_6.png" alt="Hallway art" />
                   <p className="au__art-label">Hallway Art <span>From old AU space</span></p>
                 </div>
               </div>
