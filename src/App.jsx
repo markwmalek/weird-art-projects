@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Parrish from './pages/Parrish';
 import Windows from './pages/Windows';
 import Team from './pages/Team';
+import AmericanUnderground from './pages/AmericanUnderground';
 import EmailBanner from './components/EmailBanner';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/parrish" element={<Parrish />} />
           <Route path="/windows" element={<Windows />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/american-underground" element={<AmericanUnderground />} />
         </Routes>
       </Layout>
       <EmailBanner />
