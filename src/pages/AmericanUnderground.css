@@ -173,6 +173,7 @@
   font-weight: 700;
   line-height: 1.45;
   max-width: 800px;
+  color: #ffffff;
 }
 
 /* ─── Inspiration ───────────────────────────────────────────────────────── */
@@ -278,17 +279,16 @@
 
 .au__space-hero-img {
   width: 100%;
-  max-height: 420px;
+  max-height: 640px;
   object-fit: cover;
   border-radius: 4px;
   margin-bottom: 2.5rem;
 }
 
 .au__space-body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 3rem;
-  align-items: start;
 }
 
 .au__space-col--full {
@@ -370,10 +370,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .au__space-body {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
+
 }
 
 @media (max-width: 600px) {
