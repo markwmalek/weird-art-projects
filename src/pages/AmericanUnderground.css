@@ -114,7 +114,7 @@
 }
 
 .au__section-title {
-  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
   font-weight: 700;
   margin-bottom: 2rem;
   max-width: 700px;
@@ -169,9 +169,9 @@
 }
 
 .au__goal-text {
-  font-size: clamp(1.3rem, 2.5vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
   font-weight: 700;
-  line-height: 1.45;
+  line-height: 1.4;
   max-width: 800px;
   color: #ffffff;
 }
@@ -274,7 +274,23 @@
 }
 
 .au__space-header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.au__space-name {
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.5rem;
+}
+
+.au__space-desc {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  max-width: 650px;
+  line-height: 1.6;
+  margin-top: 0.5rem;
 }
 
 .au__space-hero-img {
@@ -296,12 +312,13 @@
 }
 
 .au__col-title {
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--color-text-muted);
-  margin-bottom: 1rem;
+  letter-spacing: 0.04em;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1.5px solid var(--color-border-light);
 }
 
 /* ─── Art Table ─────────────────────────────────────────────────────────── */

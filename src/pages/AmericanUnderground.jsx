@@ -119,8 +119,8 @@ export default function AmericanUnderground() {
       <section className="au__section au__space">
         <div className="au__section-inner">
           <div className="au__space-header">
-            <p className="au__section-label">The HUB: Lounge — 1st Floor</p>
-            <h2 className="au__section-title">A layered industrial-modern retreat blending expressive art, sculptural seating, and warm brick textures.</h2>
+            <h2 className="au__space-name">The HUB: Lounge — 1st Floor</h2>
+            <p className="au__space-desc">A layered industrial-modern retreat blending expressive art, sculptural seating, and warm brick textures.</p>
           </div>
           <img src="/images/au/p5_0.png" alt="The HUB Lounge" className="au__space-hero-img" />
           <div className="au__space-body">
@@ -163,7 +163,7 @@ export default function AmericanUnderground() {
       <section className="au__section au__space au__space--alt">
         <div className="au__section-inner">
           <div className="au__space-header">
-            <p className="au__section-label">The HUB: Coworking — 1st Floor</p>
+            <h2 className="au__space-name">The HUB: Coworking — 1st Floor</h2>
           </div>
           <img src="/images/au/p8_0.png" alt="The HUB Coworking 1st Floor" className="au__space-hero-img" />
           <div className="au__space-body">
@@ -207,7 +207,7 @@ export default function AmericanUnderground() {
       <section className="au__section au__space">
         <div className="au__section-inner">
           <div className="au__space-header">
-            <p className="au__section-label">The HUB: Coworking — 2nd Floor</p>
+            <h2 className="au__space-name">The HUB: Coworking — 2nd Floor</h2>
           </div>
           <img src="/images/au/p11_0.png" alt="The HUB Coworking 2nd Floor" className="au__space-hero-img" />
           <div className="au__space-body">
@@ -247,7 +247,7 @@ export default function AmericanUnderground() {
       <section className="au__section au__space au__space--alt">
         <div className="au__section-inner">
           <div className="au__space-header">
-            <p className="au__section-label">AU Yearbook Room — 1st Floor</p>
+            <h2 className="au__space-name">AU Yearbook Room — 1st Floor</h2>
           </div>
           <img src="/images/au/p14_0.png" alt="AU Yearbook Room" className="au__space-hero-img" />
           <div className="au__space-body">
@@ -289,7 +289,7 @@ export default function AmericanUnderground() {
       <section className="au__section au__space">
         <div className="au__section-inner">
           <div className="au__space-header">
-            <p className="au__section-label">Assigned Desks — 1st Floor</p>
+            <h2 className="au__space-name">Assigned Desks — 1st Floor</h2>
           </div>
           <img src="/images/au/p17_0.png" alt="Assigned Desks" className="au__space-hero-img" />
           <div className="au__space-body">
@@ -316,7 +316,7 @@ export default function AmericanUnderground() {
       <section className="au__section au__space au__space--alt">
         <div className="au__section-inner">
           <div className="au__space-header">
-            <p className="au__section-label">Misc Hallways</p>
+            <h2 className="au__space-name">Misc Hallways</h2>
           </div>
           <div className="au__space-body">
             <div className="au__space-col">
