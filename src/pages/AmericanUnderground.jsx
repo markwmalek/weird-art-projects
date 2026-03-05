@@ -155,8 +155,8 @@ export default function AmericanUnderground() {
                 <table className="au__table au__art-table">
                   <thead><tr><th></th><th>Art</th><th>Notes</th><th>Qty</th></tr></thead>
                   <tbody>
-                    <tr><td><img src="/images/au/p8_0.png" alt="" className="au__art-thumb" /></td><td>Bright Orange Abstract Painting</td><td>Coming from old AU space</td><td>1</td></tr>
-                    <tr><td><img src="/images/au/p8_1.png" alt="" className="au__art-thumb" /></td><td>Custom Mural by Christian Smith</td><td>Custom piece</td><td>1</td></tr>
+                    <tr><td><img src="/images/au/p8_1.png" alt="" className="au__art-thumb" /></td><td>Bright Orange Abstract Painting</td><td>Coming from old AU space</td><td>1</td></tr>
+                    <tr><td><img src="/images/au/p8_0.png" alt="" className="au__art-thumb" /></td><td>Custom Mural by Christian Smith</td><td>Custom piece</td><td>1</td></tr>
                     <tr><td><img src="/images/au/p8_2.png" alt="" className="au__art-thumb" /></td><td>Road Sign Sculpture</td><td>Coming from old AU space</td><td>1</td></tr>
                   </tbody>
                 </table>
@@ -199,8 +199,8 @@ export default function AmericanUnderground() {
                   <thead><tr><th></th><th>Art</th><th>Notes</th><th>Qty</th></tr></thead>
                   <tbody>
                     <tr><td><img src="/images/au/p11_0.jpeg" alt="" className="au__art-thumb" /></td><td>Flags (Durham, Pride, Vote, +2 more)</td><td>Coming from old AU space</td><td>5</td></tr>
-                    <tr><td><img src="/images/au/p11_1.png" alt="" className="au__art-thumb" /></td><td>Custom Panels by Weird</td><td>Custom piece</td><td>2</td></tr>
-                    <tr><td><img src="/images/au/p11_2.png" alt="" className="au__art-thumb" /></td><td>Custom Mural by Weird</td><td>Custom piece</td><td>1</td></tr>
+                    <tr><td><img src="/images/au/p11_2.png" alt="" className="au__art-thumb" /></td><td>Custom Panels by Weird</td><td>Custom piece</td><td>2</td></tr>
+                    <tr><td><img src="/images/au/p11_1.png" alt="" className="au__art-thumb" /></td><td>Custom Mural by Weird</td><td>Custom piece</td><td>1</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -281,9 +281,9 @@ export default function AmericanUnderground() {
                     <tr><td><img src="/images/au/p17_0.png" alt="" className="au__art-thumb" /></td><td>Keith Haring Print</td><td>Need to source from vault</td><td>1</td></tr>
                     <tr><td><img src="/images/au/p17_1.png" alt="" className="au__art-thumb" /></td><td>Michael Rosenburg Photograph</td><td>Coming from old AU space</td><td>1</td></tr>
                     <tr><td><img src="/images/au/p17_2.png" alt="" className="au__art-thumb" /></td><td>Lego Skyline</td><td>Coming from old AU space</td><td>1</td></tr>
-                    <tr><td><img src="/images/au/p17_3.png" alt="" className="au__art-thumb" /></td><td>Star Wars Sculpture</td><td>Coming from old AU space</td><td>1</td></tr>
+                    <tr><td><img src="/images/au/p17_5.png" alt="" className="au__art-thumb" /></td><td>Star Wars Sculpture</td><td>Coming from old AU space</td><td>1</td></tr>
                     <tr><td><img src="/images/au/p17_4.png" alt="" className="au__art-thumb" /></td><td>Boxer Oil Painting by HT Johnson</td><td>Need to source from vault</td><td>1</td></tr>
-                    <tr><td><img src="/images/au/p17_5.png" alt="" className="au__art-thumb" /></td><td>Metal Numbers</td><td>Coming from old AU space</td><td>2</td></tr>
+                    <tr><td><img src="/images/au/p17_3.png" alt="" className="au__art-thumb" /></td><td>Metal Numbers</td><td>Coming from old AU space</td><td>2</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -307,11 +307,11 @@ export default function AmericanUnderground() {
                 <table className="au__table au__art-table">
                   <thead><tr><th></th><th>Art</th><th>Notes</th><th>Qty</th></tr></thead>
                   <tbody>
-                    <tr><td><img src="/images/au/p19_0.png" alt="" className="au__art-thumb" /></td><td>White Abstract Framed Piece</td><td>Coming from old AU space</td><td>1</td></tr>
-                    <tr><td><img src="/images/au/p19_1.png" alt="" className="au__art-thumb" /></td><td>Face in Direction Print</td><td>Coming from old AU space</td><td>1</td></tr>
-                    <tr><td><img src="/images/au/p19_2.png" alt="" className="au__art-thumb" /></td><td>4 Horsemen</td><td>Need to source from vault</td><td>1</td></tr>
-                    <tr><td><img src="/images/au/p19_3.png" alt="" className="au__art-thumb" /></td><td>Custom Painting by McKayla Walker</td><td>Custom piece</td><td>1</td></tr>
-                    <tr><td></td><td>Series of Paintings by Reneesha</td><td>Custom pieces</td><td>4</td></tr>
+                    <tr><td></td><td>White Abstract Framed Piece</td><td>Coming from old AU space</td><td>1</td></tr>
+                    <tr><td></td><td>Face in Direction Print</td><td>Coming from old AU space</td><td>1</td></tr>
+                    <tr><td><img src="/images/au/p19_3.png" alt="" className="au__art-thumb" /></td><td>4 Horsemen</td><td>Need to source from vault</td><td>1</td></tr>
+                    <tr><td><img src="/images/au/p19_0.png" alt="" className="au__art-thumb" /></td><td>Custom Painting by McKayla Walker</td><td>Custom piece</td><td>1</td></tr>
+                    <tr><td><img src="/images/au/p19_1.png" alt="" className="au__art-thumb" /></td><td>Series of Paintings by Reneesha</td><td>Custom pieces</td><td>4</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -333,11 +333,11 @@ export default function AmericanUnderground() {
                 <table className="au__table au__art-table">
                   <thead><tr><th></th><th>Art</th><th>Notes</th><th>Qty</th></tr></thead>
                   <tbody>
-                    <tr><td><img src="/images/au/p20_0.png" alt="" className="au__art-thumb" /></td><td>Red Abstract Painting</td><td>Coming from old AU space</td><td>1</td></tr>
-                    <tr><td><img src="/images/au/p20_1.png" alt="" className="au__art-thumb" /></td><td>Large Multi Color Abstract</td><td>Coming from old AU space</td><td>1</td></tr>
-                    <tr><td><img src="/images/au/p20_2.png" alt="" className="au__art-thumb" /></td><td>Rothko Print &amp; Small Prints</td><td>Coming from old AU space</td><td>3</td></tr>
-                    <tr><td><img src="/images/au/p20_3.png" alt="" className="au__art-thumb" /></td><td>Abstract Multi Color</td><td>Coming from old AU space</td><td>1</td></tr>
-                    <tr><td><img src="/images/au/p20_4.png" alt="" className="au__art-thumb" /></td><td>Black &amp; White Landscapes</td><td>Coming from old AU space</td><td>2</td></tr>
+                    <tr><td><img src="/images/au/p20_1.png" alt="" className="au__art-thumb" /></td><td>Red Abstract Painting</td><td>Coming from old AU space</td><td>1</td></tr>
+                    <tr><td><img src="/images/au/p20_2.png" alt="" className="au__art-thumb" /></td><td>Large Multi Color Abstract</td><td>Coming from old AU space</td><td>1</td></tr>
+                    <tr><td><img src="/images/au/p20_3.png" alt="" className="au__art-thumb" /></td><td>Rothko Print &amp; Small Prints</td><td>Coming from old AU space</td><td>3</td></tr>
+                    <tr><td><img src="/images/au/p20_4.png" alt="" className="au__art-thumb" /></td><td>Abstract Multi Color</td><td>Coming from old AU space</td><td>1</td></tr>
+                    <tr><td><img src="/images/au/p20_5.png" alt="" className="au__art-thumb" /></td><td>Black &amp; White Landscapes</td><td>Coming from old AU space</td><td>2</td></tr>
                   </tbody>
                 </table>
               </div>
