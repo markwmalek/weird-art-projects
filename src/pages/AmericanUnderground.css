@@ -123,9 +123,18 @@
 /* ─── Hero ──────────────────────────────────────────────────────────────── */
 
 .au__hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 60vh;
+  border-bottom: 1.5px solid var(--color-border-light);
+}
+
+.au__hero-text {
   padding: 5rem var(--gutter) 4rem;
-  max-width: var(--max-width);
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.75rem;
 }
 
 .au__eyebrow {
@@ -134,20 +143,57 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--color-text-muted);
-  margin-bottom: 1rem;
 }
 
 .au__hero h1 {
-  font-family: var(--font-display);
-  font-size: clamp(4rem, 10vw, 9rem);
-  line-height: 0.95;
-  letter-spacing: 0.02em;
-  margin-bottom: 1.5rem;
+  font-size: clamp(4rem, 8vw, 8rem);
+  line-height: 1;
+  margin-bottom: 0.25rem;
 }
 
 .au__hero-sub {
-  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
   color: var(--color-text-muted);
+}
+
+.au__hero-byline {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.au__hero-img-wrap {
+  overflow: hidden;
+  border-left: 1.5px solid var(--color-border-light);
+}
+
+.au__hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ─── Mission ───────────────────────────────────────────────────────────── */
+
+.au__mission {
+  border-top: 1.5px solid var(--color-border-light);
+  border-bottom: 1.5px solid var(--color-border-light);
+}
+
+.au__mission-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3.5rem var(--gutter);
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.au__mission-text {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.7;
+  color: var(--color-text);
+  max-width: 700px;
 }
 
 /* ─── Goal ──────────────────────────────────────────────────────────────── */
@@ -346,9 +392,114 @@
   background: var(--color-border-light);
 }
 
+/* ─── Creative Foundation ───────────────────────────────────────────────── */
+
+.au__creative-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.au__creative-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.au__creative-list li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.au__creative-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--color-text-muted);
+}
+
+/* ─── Implementation Path ───────────────────────────────────────────────── */
+
+.au__impl-card {
+  background: var(--color-black);
+  color: var(--color-white);
+  border-radius: 6px;
+  padding: 2.5rem;
+}
+
+.au__impl-badge {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 2rem;
+}
+
+.au__impl-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.au__impl-item {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 1rem;
+  align-items: baseline;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.au__impl-item--total {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+.au__impl-label {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.au__impl-value {
+  font-size: 0.95rem;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.au__impl-total {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-family: var(--font-display);
+}
+
 /* ─── Responsive ────────────────────────────────────────────────────────── */
 
 @media (max-width: 900px) {
+  .au__hero {
+    grid-template-columns: 1fr;
+    min-height: unset;
+  }
+
+  .au__hero-img-wrap {
+    height: 50vw;
+    border-left: none;
+    border-top: 1.5px solid var(--color-border-light);
+  }
+
+  .au__mission-inner {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
   .au__inspiration-grid {
     grid-template-columns: 1fr;
   }
@@ -362,12 +513,24 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .au__creative-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 
+  .au__impl-item {
+    grid-template-columns: 140px 1fr;
+  }
 }
 
 @media (max-width: 600px) {
-  .au__hero h1 {
-    font-size: clamp(3rem, 14vw, 5rem);
+  .au__hero-text {
+    padding: 3rem var(--gutter) 2.5rem;
+  }
+
+  .au__impl-item {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
   }
 
   .au__inspiration-small {
