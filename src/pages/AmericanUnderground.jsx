@@ -57,9 +57,6 @@ export default function AmericanUnderground() {
           <p className="au__hero-sub">Decor Proposal — March 7, 2026</p>
           <p className="au__hero-byline">Lindsay &amp; Mark</p>
         </div>
-        <div className="au__hero-img-wrap">
-          <img src="/images/au/p1_0.png" alt="American Underground space" className="au__hero-img" />
-        </div>
       </section>
 
       {/* Mission */}
