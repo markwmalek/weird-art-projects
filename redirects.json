@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/american-underground",
+      "destination": "https://www.weirdproductions.art/american-underground",
+      "permanent": true
+    }
+  ]
+}
