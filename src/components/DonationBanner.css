@@ -1,0 +1,47 @@
+.donation-banner {
+  background: var(--color-blue);
+  padding: 0.6rem var(--gutter);
+}
+
+.donation-banner__link {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+
+.donation-banner__text {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.donation-banner__cta {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.donation-banner__link:hover .donation-banner__cta {
+  opacity: 0.75;
+}
+
+.donation-banner__link:hover .donation-banner__text {
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .donation-banner__link {
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: center;
+  }
+}

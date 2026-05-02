@@ -49,6 +49,14 @@ export default function Nav() {
           </div>
 
           <AppLink to="/team" className="nav__link">Team</AppLink>
+          <a
+            href="https://fa7b88-3.myshopify.com/products/dianne-hebert-memorial-fund"
+            className="nav__donate"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Donate
+          </a>
         </nav>
       </div>
     </header>

@@ -88,6 +88,23 @@
   color: var(--color-black);
 }
 
+.nav__donate {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: var(--color-blue);
+  padding: 0.45rem 1.1rem;
+  border-radius: 980px;
+  text-decoration: none;
+  transition: background 0.2s;
+  line-height: 1;
+}
+
+.nav__donate:hover {
+  background: #2d4ae0;
+}
+
 /* Active state for nav link */
 .nav__link--active {
   background: var(--color-border);
