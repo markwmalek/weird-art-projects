@@ -4,6 +4,13 @@ import './Home.css';
 
 const upcomingEvents = [
   {
+    title: 'Weird Pot Party',
+    date: 'MAY 15, 2026',
+    venue: 'CCB Plaza, Downtown Durham',
+    image: '/images/home/hero-event.png',
+    link: '/weird-pot-party',
+  },
+  {
     title: 'Parties on Parrish',
     date: 'FEB 1 - 28, 2026',
     venue: 'Black Wall Street',
@@ -45,8 +52,8 @@ export default function Home() {
       <section className="tiles">
         <h2 className="tiles__heading">Our Projects</h2>
         <div className="tiles__grid">
-          <AppLink to={upcomingEvents[0].link} className="tile tile--lg">
-            <img src={upcomingEvents[0].image} alt={upcomingEvents[0].title} className="tile__img" />
+          <AppLink to={upcomingEvents[0].link} className="tile tile--lg tile--black">
+            <img src="/images/pot-party/Hero Image.png" alt={upcomingEvents[0].title} className="tile__img" />
             <div className="tile__content">
               <span className="tile__date">{upcomingEvents[0].date}</span>
               <h3 className="tile__title">{upcomingEvents[0].title}</h3>
@@ -60,6 +67,15 @@ export default function Home() {
               <span className="tile__date">{upcomingEvents[1].date}</span>
               <h3 className="tile__title">{upcomingEvents[1].title}</h3>
               <span className="tile__cta">{upcomingEvents[1].venue} &rarr;</span>
+            </div>
+          </AppLink>
+
+          <AppLink to={upcomingEvents[2].link} className="tile tile--sm">
+            <img src={upcomingEvents[2].image} alt={upcomingEvents[2].title} className="tile__img" />
+            <div className="tile__content">
+              <span className="tile__date">{upcomingEvents[2].date}</span>
+              <h3 className="tile__title">{upcomingEvents[2].title}</h3>
+              <span className="tile__cta">{upcomingEvents[2].venue} &rarr;</span>
             </div>
           </AppLink>
         </div>
@@ -78,10 +94,6 @@ export default function Home() {
             <AppLink to="/team" className="tile__link">Meet the Team &rarr;</AppLink>
           </div>
 
-          <div className="tile tile--sticker">
-            <img src="/images/home/logo-sticker.png" alt="Weird Art Projects" className="sticker-main" />
-            <img src="/images/home/Mimi Sticker.svg" alt="Mimi" className="sticker-mimi" />
-          </div>
         </div>
       </section>
 

@@ -8,7 +8,7 @@ export default function Nav() {
   const projectsRef = useRef(null);
   const location = useLocation();
 
-  const isProjectsPage = location.pathname === '/parrish' || location.pathname === '/windows';
+  const isProjectsPage = location.pathname === '/parrish' || location.pathname === '/windows' || location.pathname === '/weird-pot-party';
 
   useEffect(() => {
     function handleClick(e) {
@@ -42,8 +42,9 @@ export default function Nav() {
             </button>
             {projectsOpen && (
               <div className="nav__dropdown-menu">
-                <AppLink to="/windows" onClick={handleProjectClick}>Weird Windows</AppLink>
+                <AppLink to="/weird-pot-party" onClick={handleProjectClick}>Weird Pot Party</AppLink>
                 <AppLink to="/parrish" onClick={handleProjectClick}>Parties on Parrish</AppLink>
+                <AppLink to="/windows" onClick={handleProjectClick}>Weird Windows</AppLink>
               </div>
             )}
           </div>

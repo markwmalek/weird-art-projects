@@ -121,7 +121,7 @@
 
 .tiles__grid {
   display: grid;
-  grid-template-columns: 1.6fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1.25rem;
 }
 
@@ -273,6 +273,10 @@
 
 .tile--sticker:hover .sticker-mimi {
   transform: scale(1.12) rotate(6deg);
+}
+
+.tile--black {
+  background: var(--color-black);
 }
 
 /* ========================

@@ -38,7 +38,7 @@
   font-size: 0.85rem;
   font-weight: 400;
   color: var(--color-text-muted);
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.75rem;
   display: flex;
   align-items: center;
   gap: 0.2rem;
@@ -110,6 +110,7 @@
   background: var(--color-border);
   color: var(--color-black);
   border-radius: 20px;
+  padding: 0.5rem 0.75rem;
 }
 
 @media (max-width: 768px) {
