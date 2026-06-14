@@ -4,6 +4,11 @@
       "source": "/american-underground",
       "destination": "https://www.weirdproductions.art/american-underground",
       "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "destination": "https://weirdproductions.art/$1",
+      "permanent": true
     }
   ],
   "rewrites": [

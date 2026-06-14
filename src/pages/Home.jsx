@@ -2,19 +2,19 @@ import AppLink from '../components/AppLink';
 import HeroSvg from '../components/HeroSvg';
 import './Home.css';
 
-const upcomingEvents = [
+const projects = [
   {
     title: 'Weird Pot Party',
     date: 'MAY 15, 2026',
     venue: 'CCB Plaza, Downtown Durham',
-    image: '/images/home/hero-event.png',
+    image: '/images/pot-party/Hero Image.png',
     link: '/weird-pot-party',
   },
   {
     title: 'Parties on Parrish',
-    date: 'FEB 1 - 28, 2026',
+    date: 'FEB 1 – 28, 2026',
     venue: 'Black Wall Street',
-    image: '/images/home/hero-event.png',
+    image: '/images/parrish/live-painting.png',
     link: '/parrish',
   },
   {
@@ -48,66 +48,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Events tiles */}
-      <section className="tiles">
-        <h2 className="tiles__heading">Our Projects</h2>
-        <div className="tiles__grid">
-          <AppLink to={upcomingEvents[0].link} className="tile tile--lg tile--black">
-            <img src="/images/pot-party/Hero Image.png" alt={upcomingEvents[0].title} className="tile__img" />
-            <div className="tile__content">
-              <span className="tile__date">{upcomingEvents[0].date}</span>
-              <h3 className="tile__title">{upcomingEvents[0].title}</h3>
-              <span className="tile__cta">{upcomingEvents[0].venue} &rarr;</span>
-            </div>
-          </AppLink>
-
-          <AppLink to={upcomingEvents[1].link} className="tile tile--sm">
-            <img src={upcomingEvents[1].image} alt={upcomingEvents[1].title} className="tile__img" />
-            <div className="tile__content">
-              <span className="tile__date">{upcomingEvents[1].date}</span>
-              <h3 className="tile__title">{upcomingEvents[1].title}</h3>
-              <span className="tile__cta">{upcomingEvents[1].venue} &rarr;</span>
-            </div>
-          </AppLink>
-
-          <AppLink to={upcomingEvents[2].link} className="tile tile--sm">
-            <img src={upcomingEvents[2].image} alt={upcomingEvents[2].title} className="tile__img" />
-            <div className="tile__content">
-              <span className="tile__date">{upcomingEvents[2].date}</span>
-              <h3 className="tile__title">{upcomingEvents[2].title}</h3>
-              <span className="tile__cta">{upcomingEvents[2].venue} &rarr;</span>
-            </div>
-          </AppLink>
-        </div>
+      {/* Featured photo */}
+      <section className="featured">
+        <AppLink to={projects[0].link} className="featured__link">
+          <img
+            src={projects[0].image}
+            alt={projects[0].title}
+            className="featured__img"
+          />
+        </AppLink>
+        <p className="featured__caption">
+          Bringing Durham's creative community together through collaborative events &amp; public art.
+        </p>
       </section>
 
-      {/* About + sticker row */}
-      <section className="tiles">
-        <div className="tiles__grid">
-          <div className="tile tile--text">
-            <h2 className="tile__text-title">About Weird</h2>
-            <p className="tile__text-body">
-              Weird Art Projects brings together Durham's creative community through
-              collaborative events, immersive experiences, and public art activations.
-              We believe in the power of art to connect people and transform spaces.
-            </p>
-            <AppLink to="/team" className="tile__link">Meet the Team &rarr;</AppLink>
-          </div>
-
+      {/* Projects grid */}
+      <section className="projects">
+        <h2 className="projects__heading">Our Projects</h2>
+        <div className="projects__grid">
+          {projects.map((project) => (
+            <AppLink to={project.link} className="project-card" key={project.title}>
+              <div className="project-card__img-wrap">
+                <img src={project.image} alt={project.title} className="project-card__img" />
+              </div>
+              <div className="project-card__info">
+                <h3 className="project-card__title">{project.title}</h3>
+                <span className="project-card__meta">{project.venue} — {project.date}</span>
+              </div>
+            </AppLink>
+          ))}
         </div>
       </section>
-
-      {/* Donate row - hidden until donation system is ready
-      <section className="tiles">
-        <div className="tile tile--dark tile--full">
-          <h2 className="tile__dark-title">Support Art for All</h2>
-          <p className="tile__dark-body">
-            Your support helps us create free public programming and uplift local artists.
-          </p>
-          <a href="#donate" className="tile__btn">Donate &rarr;</a>
-        </div>
-      </section>
-      */}
     </div>
   );
 }

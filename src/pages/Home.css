@@ -39,41 +39,20 @@
 }
 
 @keyframes wiggle-left {
-  0%, 100% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-  20% {
-    transform: translate(0.5px, -1px) rotate(2deg);
-  }
-  40% {
-    transform: translate(-0.5px, 0.5px) rotate(-1deg);
-  }
-  60% {
-    transform: translate(0.3px, -0.5px) rotate(1.5deg);
-  }
-  80% {
-    transform: translate(-0.3px, 0.3px) rotate(-0.5deg);
-  }
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  20%       { transform: translate(0.5px, -1px) rotate(2deg); }
+  40%       { transform: translate(-0.5px, 0.5px) rotate(-1deg); }
+  60%       { transform: translate(0.3px, -0.5px) rotate(1.5deg); }
+  80%       { transform: translate(-0.3px, 0.3px) rotate(-0.5deg); }
 }
 
 @keyframes wiggle-right {
-  0%, 100% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-  15% {
-    transform: translate(-0.5px, -0.8px) rotate(-2deg);
-  }
-  35% {
-    transform: translate(0.5px, 0.5px) rotate(1.5deg);
-  }
-  55% {
-    transform: translate(-0.3px, -0.5px) rotate(-1deg);
-  }
-  75% {
-    transform: translate(0.4px, 0.3px) rotate(1deg);
-  }
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  15%       { transform: translate(-0.5px, -0.8px) rotate(-2deg); }
+  35%       { transform: translate(0.5px, 0.5px) rotate(1.5deg); }
+  55%       { transform: translate(-0.3px, -0.5px) rotate(-1deg); }
+  75%       { transform: translate(0.4px, 0.3px) rotate(1deg); }
 }
-
 
 /* ========================
    STATS
@@ -109,221 +88,99 @@
 }
 
 /* ========================
-   TILES — shared
+   FEATURED PHOTO
    ======================== */
-.tiles {
-  padding: 0 var(--gutter) 1.25rem;
+.featured {
+  padding: 0 var(--gutter) 1rem;
 }
 
-.tiles__heading {
-  margin-bottom: 1rem;
+.featured__link {
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.tiles__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.25rem;
+.featured__img {
+  width: 100%;
+  height: clamp(320px, 55vw, 620px);
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
 }
 
-.tiles__grid--trio {
-  grid-template-columns: 1.2fr 0.8fr 1fr;
+.featured__link:hover .featured__img {
+  transform: scale(1.02);
+}
+
+.featured__caption {
+  margin-top: 1.25rem;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  padding: 0 0.25rem;
 }
 
 /* ========================
-   TILE — base
+   PROJECTS GRID
    ======================== */
-.tile {
-  border-radius: 24px;
-  overflow: hidden;
-  position: relative;
+.projects {
+  padding: 3rem var(--gutter) 2rem;
+}
+
+.projects__heading {
+  margin-bottom: 1.5rem;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* ========================
+   PROJECT CARD
+   ======================== */
+.project-card {
   text-decoration: none;
   color: var(--color-black);
-  background: var(--color-card-bg);
   display: block;
 }
 
-/* ========================
-   IMAGE TILES (events)
-   ======================== */
-.tile--lg,
-.tile--sm {
-  min-height: 420px;
+.project-card__img-wrap {
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
 }
 
-.tile__img {
+.project-card__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
   transition: transform 0.5s ease;
 }
 
-.tile:hover .tile__img {
-  transform: scale(1.03);
+.project-card:hover .project-card__img {
+  transform: scale(1.04);
 }
 
-.tile__content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 2rem;
-  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.65) 100%);
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
+.project-card__info {
+  padding: 1rem 0.25rem 0;
 }
 
-.tile__date {
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  opacity: 0.8;
-}
-
-.tile__title {
-  color: #ffffff !important;
-  line-height: 1.05;
-}
-
-.tile__cta {
+.project-card__title {
   font-family: var(--font-display);
-  font-size: 0.85rem;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
   text-transform: uppercase;
-  opacity: 0.7;
-  transition: opacity 0.2s;
+  line-height: 1.1;
+  margin-bottom: 0.35rem;
 }
 
-.tile:hover .tile__cta {
-  opacity: 1;
-}
-
-/* ========================
-   TEXT TILE (about)
-   ======================== */
-.tile--text {
-  padding: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: var(--color-card-bg);
-}
-
-.tile__text-title {
-  margin-bottom: 1rem;
-}
-
-.tile__text-body {
-  font-size: 0.95rem;
-  line-height: 1.7;
+.project-card__meta {
+  font-size: 0.8rem;
   color: var(--color-text-muted);
-  margin-bottom: 1.5rem;
-}
-
-.tile__link {
-  font-family: var(--font-display);
-  font-size: 0.9rem;
   text-transform: uppercase;
-  color: var(--color-blue);
-  text-decoration: none;
-  transition: opacity 0.2s;
-}
-
-.tile__link:hover {
-  opacity: 0.7;
-}
-
-/* ========================
-   STICKER TILE
-   ======================== */
-.tile--sticker {
-  background: var(--color-blue);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2.5rem;
-  position: relative;
-}
-
-.tile--sticker .sticker-main {
-  width: 80%;
-  max-width: 180px;
-  height: auto;
-  filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.15));
-  transition: transform 0.4s ease;
-}
-
-.tile--sticker .sticker-mimi {
-  position: absolute;
-  width: 55%;
-  max-width: 130px;
-  height: auto;
-  bottom: 15%;
-  right: 20%;
-  transition: transform 0.4s ease;
-}
-
-.tile--sticker:hover .sticker-main {
-  transform: scale(1.08) rotate(-4deg);
-}
-
-.tile--sticker:hover .sticker-mimi {
-  transform: scale(1.12) rotate(6deg);
-}
-
-.tile--black {
-  background: var(--color-black);
-}
-
-/* ========================
-   DARK TILE (donate)
-   ======================== */
-.tile--dark {
-  background: #1d1d1f;
-  padding: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.tile--full {
-  text-align: center;
-  align-items: center;
-  padding: 4rem 2.5rem;
-}
-
-.tile__dark-title {
-  color: #ffffff !important;
-  margin-bottom: 0.75rem;
-}
-
-.tile__dark-body {
-  font-size: 0.9rem;
-  line-height: 1.65;
-  color: #a1a1a6;
-  margin-bottom: 1.5rem;
-}
-
-.tile__btn {
-  display: inline-block;
-  font-family: var(--font-display);
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: var(--color-blue);
-  text-decoration: none;
-  padding: 0.7rem 1.75rem;
-  border-radius: 980px;
-  align-self: flex-start;
-  transition: background 0.2s;
-}
-
-.tile__btn:hover {
-  background: #2d4ae0;
+  letter-spacing: 0.02em;
 }
 
 /* ========================
@@ -334,26 +191,8 @@
     padding: 4rem var(--gutter) 2rem;
   }
 
-  .tiles__grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .tiles__grid--trio {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .tile--lg,
-  .tile--sm {
-    min-height: 320px;
-  }
-
-  .tile--text {
-    grid-column: span 2;
-  }
-
-  .tile--sticker {
-    grid-column: span 2;
-    min-height: 200px;
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -374,35 +213,24 @@
     font-size: clamp(1.4rem, 6vw, 2rem);
   }
 
-  .tiles {
+  .featured {
     padding: 0 0.75rem 0.75rem;
   }
 
-  .tiles__grid,
-  .tiles__grid--trio {
+  .featured__link {
+    border-radius: 16px;
+  }
+
+  .projects {
+    padding: 2rem 0.75rem 1rem;
+  }
+
+  .projects__grid {
     grid-template-columns: 1fr;
-    gap: 0.75rem;
+    gap: 2rem;
   }
 
-  .tile {
-    border-radius: 18px;
-  }
-
-  .tile--lg,
-  .tile--sm {
-    min-height: 280px;
-  }
-
-  .tile--text {
-    grid-column: span 1;
-    padding: 2rem;
-  }
-
-  .tile--dark {
-    padding: 2rem;
-  }
-
-  .tile__content {
-    padding: 1.5rem;
+  .project-card__img-wrap {
+    border-radius: 14px;
   }
 }
